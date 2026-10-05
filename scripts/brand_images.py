@@ -1,9 +1,14 @@
-"""Bake the logo badge into the site images.
+"""Bake the transparent logo badge into the site images.
 
 Reads the unbranded originals from brand_assets/unbranded-images/ and writes
 branded WebP files to src/assets/images/. Re-run after replacing an original.
-Usage: python scripts/brand_images.py <path-to-logo-render.png>
-(logo render = public/logo.svg screenshotted at 3x on a transparent background)
+Usage: python scripts/brand_images.py <path-to-logo.png>
+(logo = public/logo-full.png, the lockup on a transparent background)
+
+The badge is sized and placed relative to each image, so it works for the
+different image sizes (1152x928 headers, 1120x960 homepage photos, 1264x848
+tile). Every image is shown at roughly its native aspect ratio, so a small
+margin from the bottom-right corner survives the page crop.
 """
 import sys
 from pathlib import Path
@@ -13,59 +18,37 @@ ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "brand_assets" / "unbranded-images"
 OUT = ROOT / "src" / "assets" / "images"
 
-# Pages crop these images to different aspect ratios, so the badge must sit
-# inside the area that always survives the crop.
-SIDE_MARGIN = 280      # px from the right edge (hero/tile center-crops)
-BOTTOM_MARGIN = 40     # default px from the bottom
-BOTTOM_MARGIN_BY_NAME = {
-    "about-before-after": 110,   # 900x400 crop
-    "about-team": 110,
-    "about-homeowner": 110,
-    "about-clean-water": 175,    # 900x300 banner crop
-}
-# About-page images are shown full width (no sideways crop), so they get a true corner.
-SIDE_MARGIN_BY_NAME = {
-    "about-before-after": 40,
-    "about-team": 40,
-    "about-homeowner": 40,
-    "about-clean-water": 40,
-    "about-founders": 200,       # 700x500 crop
-}
-BADGE_OPACITY = 0.7   # 1.0 = solid, lower = more see-through
-# 1200px-wide 4:3 photos are shown smaller than the 1408px ones, so the badge
-# is drawn relatively larger and sits closer to the corner.
-LOGO_WIDTH_BY_NAME = {
-    "best-section": 360,
-    "new-construction-installation-header": 330,
-}
-SIDE_MARGIN_BY_NAME.update({"best-section": 100, "new-construction-installation-header": 70})
-BOTTOM_MARGIN_BY_NAME.update({"best-section": 70, "new-construction-installation-header": 50})
-PAD = 14
-LOGO_WIDTH = 300
+BADGE_OPACITY = 0.7     # 1.0 = solid, lower = more see-through
+LOGO_WIDTH_FRAC = 0.22  # logo width as a fraction of the image width
+MARGIN_FRAC = 0.05      # distance from the right/bottom edge, as a fraction of image width
+PAD_FRAC = 0.012        # padding inside the white pill, as a fraction of image width
 
 
-def badge(logo_path: Path, width: int = LOGO_WIDTH) -> Image.Image:
+def badge(logo_path: Path, image_width: int) -> Image.Image:
+    width = round(image_width * LOGO_WIDTH_FRAC)
+    pad = round(image_width * PAD_FRAC)
     logo = Image.open(logo_path).convert("RGBA")
     logo = logo.crop(logo.getbbox())
     h = round(logo.height * width / logo.width)
     logo = logo.resize((width, h), Image.LANCZOS)
-    w, hh = logo.width + PAD * 2, logo.height + PAD * 2
+    w, hh = logo.width + pad * 2, logo.height + pad * 2
     pill = Image.new("RGBA", (w, hh), (0, 0, 0, 0))
-    ImageDraw.Draw(pill).rounded_rectangle((0, 0, w - 1, hh - 1), radius=18, fill=(255, 255, 255, 230))
-    pill.alpha_composite(logo, (PAD, PAD))
+    ImageDraw.Draw(pill).rounded_rectangle((0, 0, w - 1, hh - 1), radius=round(pad * 1.3), fill=(255, 255, 255, 230))
+    pill.alpha_composite(logo, (pad, pad))
     pill.putalpha(pill.getchannel("A").point(lambda a: round(a * BADGE_OPACITY)))
     return pill
 
 
 def main(logo_path: str) -> None:
+    OUT.mkdir(parents=True, exist_ok=True)
     for src in sorted(SRC.glob("*.webp")):
         im = Image.open(src).convert("RGBA")
-        pill = badge(Path(logo_path), LOGO_WIDTH_BY_NAME.get(src.stem, LOGO_WIDTH))
-        bottom = BOTTOM_MARGIN_BY_NAME.get(src.stem, BOTTOM_MARGIN)
-        x = im.width - SIDE_MARGIN_BY_NAME.get(src.stem, SIDE_MARGIN) - pill.width
-        y = im.height - bottom - pill.height
+        pill = badge(Path(logo_path), im.width)
+        margin = round(im.width * MARGIN_FRAC)
+        x = im.width - margin - pill.width
+        y = im.height - margin - pill.height
         im.alpha_composite(pill, (x, y))
-        im.convert("RGB").save(OUT / src.name, "WEBP", quality=88)
+        im.convert("RGB").save(OUT / src.name, "WEBP", quality=86)
         print("branded", src.name)
 
 

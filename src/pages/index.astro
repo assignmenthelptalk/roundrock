@@ -1,9 +1,13 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../components/Layout.astro";
 import LocalSchema from "../components/LocalSchema.astro";
 import QuickFacts from "../components/QuickFacts.astro";
 import RoundRockMap from "../components/RoundRockMap.astro";
 import { site } from "../lib/site";
+import heroImage from "../assets/images/hero-softener.webp";
+import bestImage from "../assets/images/best-technicians.webp";
+import hardWaterImage from "../assets/images/hard-water-tile.webp";
 
 const services = [
   { emoji: "💧", name: "Water Quality Testing", href: "/water-quality/", detail: `Free in-home hardness test for ${site.city} homes.`, linkText: `${site.city} Water Quality Report: Hardness, Source & Safety` },
@@ -83,11 +87,11 @@ const faqs = [
       </div>
 
       <div class="hero-media">
-        <img
-          src="https://placehold.co/700x600/EFF6FF/2563EB?text=Water+Softener+Photo"
+        <Image
+          src={heroImage}
           alt={`Water softener system installed in a ${site.city}, ${site.stateAbbr} home`}
-          width="700"
-          height="600"
+          width={700}
+          height={600}
           loading="eager"
         />
       </div>
@@ -136,11 +140,11 @@ const faqs = [
       <h2 class="best-title">Why We're the Best Water Softener Installation Company in {site.city}, {site.stateAbbr} &amp; {site.region}</h2>
       <div class="best-layout">
         <div class="best-media">
-          <img
-            src="https://placehold.co/600x512/0F6E78/E1F5EE?text=Technicians+At+Work"
+          <Image
+            src={bestImage}
             alt={`Water softener specialists discussing a system installation in a ${site.city}, ${site.stateAbbr} home`}
-            width="600"
-            height="512"
+            width={600}
+            height={512}
             loading="lazy"
           />
         </div>
@@ -195,7 +199,7 @@ const faqs = [
           <a class="service-learn-more" href="/hard-water/">Hard Water Effects in {site.city}: What It Does to Your Home</a>
         </div>
         <div class="service-section-media">
-          <img src="https://placehold.co/600x400/0A2E33/ffffff?text=Hard+Water" alt={`Hard water effects in ${site.city}, ${site.stateAbbr}`} width="600" height="400" loading="lazy" />
+          <Image src={hardWaterImage} alt={`Hard water limescale buildup on a ${site.city}, ${site.stateAbbr} kitchen faucet`} width={600} height={400} loading="lazy" />
         </div>
       </div>
     </div>

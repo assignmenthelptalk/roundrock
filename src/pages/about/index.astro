@@ -2,6 +2,7 @@
 import Layout from "../../components/Layout.astro";
 import HomeLink from "../../components/HomeLink.astro";
 import PageHero from "../../components/PageHero.astro";
+import headerImage from "../../assets/images/about-header.webp";
 import { site } from "../../lib/site";
 
 const primaryCta = site.phoneNumber && site.phoneNumber !== "PHONE_NUMBER"
@@ -104,6 +105,7 @@ const faqs = [
   <PageHero
     breadcrumbs={[{ label: "About" }]}
     heading={`About ${site.businessName} | Trusted Local Specialists`}
+    image={headerImage}
     primaryCta={primaryCta}
     secondaryCta={{ href: "/quote/", text: "Get a Free Quote" }}
   >

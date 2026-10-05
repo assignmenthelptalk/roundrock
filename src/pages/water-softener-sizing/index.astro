@@ -2,6 +2,7 @@
 import HomeLink from "../../components/HomeLink.astro";
 import Layout from "../../components/Layout.astro";
 import PageHero from "../../components/PageHero.astro";
+import headerImage from "../../assets/images/water-softener-sizing-header.webp";
 import QuickFacts from "../../components/QuickFacts.astro";
 import { site } from "../../lib/site";
 
@@ -41,6 +42,7 @@ const faqs = [
   <PageHero
     breadcrumbs={[{ label: "Installation", href: "/installation/" }, { label: "Sizing Guide" }]}
     heading={`Water Softener Sizing in ${site.city}, ${site.stateAbbr} | Trusted Local Specialists`}
+    image={headerImage}
     primaryCta={primaryCta}
     secondaryCta={{ href: "/quote/", text: "Get a Free Water Softener Quote in Round Rock" }}
   >
