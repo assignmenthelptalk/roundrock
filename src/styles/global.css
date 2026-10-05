@@ -14,17 +14,17 @@
 
 :root {
   /* Brand colors — exact hex values from the site's design tokens */
-  --color-primary:       #0F6E78;
-  --color-primary-dark:  #0A4F57; /* hero gradient endpoint */
-  --color-primary-light: #E1F5EE;
-  --color-accent:        #E65100;
-  --color-accent-dark:   #C2410C; /* accent hover/active state */
-  --color-accent-light:  #FDE4D0; /* light accent tint for badges */
+  --color-primary:       #205567;
+  --color-primary-dark:  #143A47; /* hero gradient endpoint */
+  --color-primary-light: #E4EEF1;
+  --color-accent:        #A85A2E;
+  --color-accent-dark:   #86461F; /* accent hover/active state */
+  --color-accent-light:  #F5E1D3; /* light accent tint for badges */
 
   /* Depth system: base -> elevated -> floating, never one flat z-plane */
   --surface-base:     #ffffff;
-  --surface-elevated: #F8FFFE;
-  --surface-footer:   #0A2E33; /* darkened primary, footer only */
+  --surface-elevated: #F7FAFB;
+  --surface-footer:   #0F2F3A; /* darkened primary, footer only */
 
   /* Never the same font for headings and body */
   --font-heading: 'DM Serif Display', Georgia, serif;

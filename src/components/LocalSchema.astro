@@ -12,6 +12,8 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   name: site.businessName,
   url: site.siteUrl,
+  logo: `${site.siteUrl}/logo-full.png`,
+  image: `${site.siteUrl}/og-default.jpg`,
   telephone: site.phoneNumber !== "PHONE_NUMBER" ? site.phoneNumber : undefined,
   email: site.businessEmail !== "BUSINESS_EMAIL" ? site.businessEmail : undefined,
   address: {
