@@ -18,10 +18,10 @@ ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "brand_assets" / "unbranded-images"
 OUT = ROOT / "src" / "assets" / "images"
 
-BADGE_OPACITY = 0.7     # 1.0 = solid, lower = more see-through
-LOGO_WIDTH_FRAC = 0.22  # logo width as a fraction of the image width
-MARGIN_FRAC = 0.05      # distance from the right/bottom edge, as a fraction of image width
-PAD_FRAC = 0.012        # padding inside the white pill, as a fraction of image width
+BADGE_OPACITY = 0.92    # 1.0 = solid, lower = more see-through
+LOGO_WIDTH_FRAC = 0.36  # logo width as a fraction of the image width
+MARGIN_FRAC = 0.04      # distance from the right/bottom edge, as a fraction of image width
+PAD_FRAC = 0.016        # padding inside the white pill, as a fraction of image width
 
 
 def badge(logo_path: Path, image_width: int) -> Image.Image:
