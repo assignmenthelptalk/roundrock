@@ -24,7 +24,7 @@ const primaryCta = site.phoneNumber && site.phoneNumber !== "PHONE_NUMBER"
   >
     <p slot="opening">
       {site.city} neighbourhoods share one {site.gpgLow}-{site.gpgHigh} GPG ({site.gpgLabel}) supply from {site.waterAuthority}.
-      {" "}<HomeLink variant="plain" />
+      {" "}<HomeLink variant="exact" />
       {" "}provides water softener installation and service across every one of them, such as
       {" "}{site.neighbourhoods.join(", ")}, and surrounding {site.county} communities. Free in-home water test
       available across all service areas. Same day service. No obligation.
