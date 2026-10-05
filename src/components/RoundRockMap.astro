@@ -101,7 +101,7 @@ import { site } from "../lib/site";
     height: 480px;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 24px rgba(27,58,107,0.15);
+    box-shadow: 0 4px 24px color-mix(in srgb, var(--color-primary) 15%, transparent);
     background: var(--surface-footer);
   }
   /* Recolors keyless OpenStreetMap raster tiles to match the navy/gold theme —
@@ -116,7 +116,7 @@ import { site } from "../lib/site";
     position: absolute;
     bottom: 16px;
     left: 16px;
-    background: rgba(27,58,107,0.85);
+    background: color-mix(in srgb, var(--color-primary-dark) 88%, transparent);
     backdrop-filter: blur(4px);
     border-radius: 8px;
     padding: 10px 14px;
@@ -129,7 +129,7 @@ import { site } from "../lib/site";
     font-family: var(--font-body);
     font-size: 12px;
     font-weight: 500;
-    color: var(--color-accent-dark);
+    color: #E0905B;
   }
   .legend-available {
     font-family: var(--font-body);
@@ -168,7 +168,7 @@ import { site } from "../lib/site";
     position: absolute;
     inset: -8px;
     border-radius: 50%;
-    background: rgba(27,58,107,0.20);
+    background: color-mix(in srgb, var(--color-primary) 20%, transparent);
     animation: pin-pulse 2s ease-out infinite;
   }
   @keyframes pin-pulse {
@@ -566,8 +566,11 @@ import { site } from "../lib/site";
     const reportIssues = document.getElementById("report-issues");
     const reportCta = document.getElementById("report-cta");
 
+    const markers: ReturnType<typeof L.marker>[] = [];
+
     neighbourhoods.forEach((hood) => {
       const marker = L.marker(hood.coords, { icon: defaultIcon() }).addTo(map);
+      markers.push(marker);
 
       // Hover tooltip — shows name and GPG on mouseover
       marker.bindTooltip(
@@ -616,5 +619,9 @@ import { site } from "../lib/site";
         if (reportCta) reportCta.textContent = `Free Consultation for ${hood.name} →`;
       });
     });
+
+    // Load with the first neighbourhood already selected, so the report panel
+    // is never empty on first paint.
+    markers[0]?.fire("click");
   }
 </script>
