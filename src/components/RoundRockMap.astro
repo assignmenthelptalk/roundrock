@@ -15,9 +15,6 @@ import { site } from "../lib/site";
       <!-- Left: map -->
       <div class="map-left">
         <div id="roundrock-map"></div>
-        <button class="map-reset-btn" id="map-reset-btn" aria-label="Reset map to Round Rock view">
-          ⌖ Reset View
-        </button>
         <div class="map-legend">
           <span class="legend-selected">● Selected Area</span>
           <span class="legend-available">○ Available Data</span>
@@ -112,37 +109,6 @@ import { site } from "../lib/site";
      separate sibling panes in Leaflet's DOM and so stay unaffected. */
   :global(#roundrock-map .leaflet-tile-pane) {
     filter: invert(1) hue-rotate(190deg) brightness(1.18) contrast(0.85) saturate(0.65);
-  }
-
-  /* Reset View button — top right, never overlaps the bottom-left legend */
-  .map-reset-btn {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    z-index: 1000;
-    padding: 8px 14px;
-    background: white;
-    border: 1.5px solid #E5E7EB;
-    border-radius: 6px;
-    font-family: var(--font-body);
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--color-primary);
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-    transition: border-color 150ms ease,
-                box-shadow 150ms ease,
-                transform 150ms ease;
-  }
-  .map-reset-btn:hover {
-    border-color: var(--color-primary);
-    box-shadow: 0 4px 12px rgba(27,58,107,0.20);
-    transform: translateY(-1px);
-  }
-  .map-reset-btn:active { transform: scale(0.97); }
-  .map-reset-btn:focus-visible {
-    outline: 3px solid var(--color-primary);
-    outline-offset: 2px;
   }
 
   /* Map legend */
@@ -438,17 +404,9 @@ import { site } from "../lib/site";
 
   // MAP_CONFIG — Round Rock, TX
   // Pin coordinates come from OpenStreetMap (Nominatim) place and landuse
-  // records for each neighbourhood. They span lat 30.5067-30.5710 and
-  // lng -97.7235 to -97.5943, so the view is centred on their midpoint at
-  // zoom 12 and panning is locked to the bounds below.
-  const CITY_CENTER: [number, number] = [30.54, -97.66];
-  const MAP_ZOOM = 12;
-  const MIN_ZOOM = 11;
-  const MAX_ZOOM = 14;
-  const BOUNDS_SOUTH = 30.46;
-  const BOUNDS_WEST = -97.78;
-  const BOUNDS_NORTH = 30.62;
-  const BOUNDS_EAST = -97.55;
+  // records for each neighbourhood. The map is static (no zoom or pan), and
+  // frames itself once around the pins, so no centre, zoom, or bounds config
+  // is needed.
 
   const neighbourhoods: Neighbourhood[] = [
     {
@@ -556,14 +514,32 @@ import { site } from "../lib/site";
   const mapEl = document.getElementById("roundrock-map");
 
   if (mapEl) {
+    // Static map: no zoom controls, wheel/touch/double-click zoom, or panning.
+    // The view is framed once around the neighbourhood pins and then locked.
     const map = L.map(mapEl, {
-      center: CITY_CENTER,
-      zoom: MAP_ZOOM,
-      minZoom: MIN_ZOOM, // tighter minimum so the user cannot zoom out to the whole metro area
-      maxZoom: MAX_ZOOM,
-      zoomControl: true,
+      zoomControl: false,
+      dragging: false,
+      scrollWheelZoom: false,
+      doubleClickZoom: false,
+      touchZoom: false,
+      boxZoom: false,
+      keyboard: false,
+      zoomSnap: 0.25,
       attributionControl: true,
     });
+
+    const pinBounds = L.latLngBounds(neighbourhoods.map((hood) => hood.coords));
+    function frameMap() {
+      map.invalidateSize();
+      map.setMinZoom(1);
+      map.setMaxZoom(18);
+      map.fitBounds(pinBounds, { padding: [48, 48], animate: false });
+      const lockedZoom = map.getZoom();
+      map.setMinZoom(lockedZoom);
+      map.setMaxZoom(lockedZoom);
+    }
+    frameMap();
+    window.addEventListener("resize", frameMap);
 
     // CARTO's keyless dark_all raster basemap (basemaps.cartocdn.com) and
     // Stadia Maps both require an API key as of September 2026. Standard
@@ -578,17 +554,6 @@ import { site } from "../lib/site";
       maxZoom: 19,
     }).addTo(map);
 
-    // Locks panning to Round Rock so the user can't drag the map out to
-    // surrounding Austin-area suburbs and lose the pins.
-    const roundRockBounds = L.latLngBounds(
-      [BOUNDS_SOUTH, BOUNDS_WEST],
-      [BOUNDS_NORTH, BOUNDS_EAST],
-    );
-    map.setMaxBounds(roundRockBounds);
-    map.on("drag", () => {
-      map.panInsideBounds(roundRockBounds, { animate: false });
-    });
-
     let activeMarker: L.Marker | null = null;
     let activePopup: L.Popup | null = null;
 
@@ -600,15 +565,6 @@ import { site } from "../lib/site";
     const reportIssuesHeading = document.getElementById("report-issues-heading");
     const reportIssues = document.getElementById("report-issues");
     const reportCta = document.getElementById("report-cta");
-
-    const resetBtn = document.getElementById("map-reset-btn");
-    if (resetBtn) {
-      resetBtn.addEventListener("click", () => {
-        map.setView(CITY_CENTER, MAP_ZOOM, { animate: true });
-        // Close any open popup
-        if (activePopup) map.closePopup(activePopup);
-      });
-    }
 
     neighbourhoods.forEach((hood) => {
       const marker = L.marker(hood.coords, { icon: defaultIcon() }).addTo(map);
@@ -640,12 +596,9 @@ import { site } from "../lib/site";
         marker.setIcon(activeIcon());
         activeMarker = marker;
 
-        // Centre map on clicked neighbourhood so the user always knows
-        // where they are.
-        map.setView(hood.coords, MAP_ZOOM, { animate: true });
-
         activePopup = L.popup({
           closeButton: false,
+          autoPan: false,
           className: "map-label-popup",
           offset: [0, -10],
         })
