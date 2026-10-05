@@ -63,8 +63,6 @@ const footerNavLinks = [
   ...verifiedServiceAreas.map((area) => ({ href: `/${area.slug}/`, label: area.city })),
   { href: "/contact/", label: "Contact" },
 ];
-import { Image } from "astro:assets";
-import logoMark from "../assets/images/logo-mark.webp";
 
 // Header wordmark: two balanced lines (e.g. "ROUND ROCK ELITE" / "WATER SOFTENER")
 // so the text stays level with the badge instead of stacking one word per line.
@@ -78,6 +76,7 @@ const logoLines = [brandWords.slice(0, brandSplit).join(" "), brandWords.slice(b
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/logo-mark.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -127,7 +126,16 @@ const logoLines = [brandWords.slice(0, brandSplit).join(" "), brandWords.slice(b
     <header class="site-header">
       <div class="container site-header-inner">
         <a class="logo" href="/" aria-label={`${site.businessName} home`}>
-          <Image class="logo-mark" src={logoMark} alt="" width={52} height={52} format="webp" loading="eager" />
+          <svg class="logo-mark" width="52" height="52" viewBox="0 0 64 64" aria-hidden="true">
+            <defs><clipPath id="logo-clip"><circle cx="32" cy="32" r="30" /></clipPath></defs>
+            <circle cx="32" cy="32" r="30" fill="var(--color-primary)" />
+            <circle cx="32" cy="32" r="26.2" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".45" />
+            <path d="M32 10.5C32 10.5 18.8 25 18.8 34.2a13.2 13.2 0 0 0 26.4 0C45.2 25 32 10.5 32 10.5Z" fill="#FFFFFF" />
+            <g clip-path="url(#logo-clip)">
+              <path d="M0 40.5C9 34.6 18 34.4 27 39c8 4.1 16 6.4 24 3.2 4.6-1.8 9.8-5 13-9.2V64H0Z" fill="var(--color-accent)" />
+              <path d="M0 47.5c9-4.2 17.5-3.6 26 .8 8 4.2 15 4.6 22 1.4 6-2.8 12-3.6 16-1.4V64H0Z" fill="var(--color-primary-dark)" />
+            </g>
+          </svg>
           <span class="logo-text" aria-hidden="true">
             {logoLines.map((line) => (
               <span class="logo-line">{line}</span>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Round Rock Elite Water Softener">
+  <defs><clipPath id="c"><circle cx="32" cy="32" r="30"/></clipPath></defs>
+  <circle cx="32" cy="32" r="30" fill="#205567"/>
+  <circle cx="32" cy="32" r="26.2" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".45"/>
+  <path d="M32 10.5C32 10.5 18.8 25 18.8 34.2a13.2 13.2 0 0 0 26.4 0C45.2 25 32 10.5 32 10.5Z" fill="#FFFFFF"/>
+  <g clip-path="url(#c)">
+    <path d="M0 40.5C9 34.6 18 34.4 27 39c8 4.1 16 6.4 24 3.2 4.6-1.8 9.8-5 13-9.2V64H0Z" fill="#A85A2E"/>
+    <path d="M0 47.5c9-4.2 17.5-3.6 26 .8 8 4.2 15 4.6 22 1.4 6-2.8 12-3.6 16-1.4V64H0Z" fill="#143A47"/>
+  </g>
+</svg>
