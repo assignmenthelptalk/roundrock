@@ -1,385 +1,145 @@
 ---
+/**
+ * Homepage. Hero follows the Henderson site's pattern: full-bleed photo,
+ * dark overlay, content on the left, compact quote form on the right.
+ * The form lives in the hero (anchor #estimate), so the separate lead-form
+ * section from the original spec was folded into it.
+ *
+ * Copy comes from src/data/pages/home.md. Body copy contains no links to
+ * service, guide or location pages (navigation and footer only).
+ *
+ * Hero photo: the first src/assets/images/hero-*.webp (made by
+ * scripts/prepare-images.mjs). Until one exists the page shows a labelled
+ * local placeholder image so the build never breaks.
+ */
 import { Image } from "astro:assets";
 import Layout from "../components/Layout.astro";
-import LocalSchema from "../components/LocalSchema.astro";
 import QuoteForm from "../components/QuoteForm.astro";
-import RoundRockMap from "../components/RoundRockMap.astro";
+import ContentProse from "../components/ContentProse.astro";
+import PageSchema from "../components/PageSchema.astro";
+import NeighbourhoodMap from "../components/NeighbourhoodMap.astro";
 import { site } from "../lib/site";
-import heroImage from "../assets/images/hero-softener.webp";
-import bestImage from "../assets/images/best-technicians.webp";
-import sizingImage from "../assets/images/water-softener-sizing-header.webp";
-import installImage from "../assets/images/installation-header.webp";
-import pricingImage from "../assets/images/quote-header.webp";
-import filtrationImage from "../assets/images/whole-home-filtration-header.webp";
-import roImage from "../assets/images/reverse-osmosis-header.webp";
-import waterTestImage from "../assets/images/free-water-test-header.webp";
-import repairImage from "../assets/images/repair-header.webp";
-import resinImage from "../assets/images/resin-bed-replacement-header.webp";
-import brineImage from "../assets/images/brine-tank-cleaning-header.webp";
+import { Content, frontmatter as fm } from "../data/pages/home.md";
+import { Content as ContentAfter, frontmatter as afterFm } from "../data/home-after.md";
 
-const faqs = [
-  {
-    q: `How hard is the water in ${site.city}?`,
-    a: `${site.city} water tests at ${site.gpgLow}-${site.gpgHigh} GPG, classified as ${site.gpgLabel}. ${site.waterAuthority} delivers this ${site.waterSource} supply to every ${site.city} home.`,
-  },
-  {
-    q: `Do I need a water softener in ${site.city}?`,
-    a: `At ${site.gpgLow}-${site.gpgHigh} GPG, a salt-based ion exchange softener is the only system that fully removes calcium and magnesium at this hardness level.`,
-  },
-  {
-    q: `How much does water softener installation cost in ${site.city}?`,
-    a: `Cost depends on household size and grain capacity required. We provide a free no-obligation quote after a free in-home water test.`,
-  },
-  {
-    q: `How long does installation take?`,
-    a: `Most residential installations complete in a single visit of three to five hours, including testing the output before leaving.`,
-  },
-  {
-    q: `Does ${site.city} water damage appliances?`,
-    a: `Yes. Scale from hard water reduces water heater efficiency by up to 24% per U.S. Department of Energy estimates, and it shortens the life of dishwashers and washing machines. A softener at the main entry point protects every appliance, from the water heater to the dishwasher.`,
-  },
-];
+const telHref = `tel:${site.phoneNumber.replace(/[^\d+]/g, "")}`;
+const heroFiles = import.meta.glob<{ default: ImageMetadata }>("../assets/images/hero-*.webp", { eager: true });
+const heroImage = Object.values(heroFiles)[0]?.default;
+const HERO_PLACEHOLDER = "/placeholders/hero.svg"; // local file in public/placeholders (no network at build)
+const badges = ["✓ Free Estimate", "✓ No Obligation", `✓ Serving ${site.city}, ${site.stateAbbr}`];
 ---
 
-<Layout
-  title={`Water Softener Installation in ${site.city}, ${site.stateAbbr}`}
-  fullTitle={`${site.businessName} | Expert Water Softener Services in ${site.city}`}
-  description={`Water softener installation and repair in ${site.city}, ${site.stateAbbr}. ${site.city} water tests at ${site.gpgLow}–${site.gpgHigh} GPG (${site.gpgLabel}). Free in-home water test available. Same day service across ${site.city} and ${site.county}.`}
->
-  <LocalSchema />
+<Layout title={fm.title} fullTitle={fm.seoTitle} description={fm.description}>
+  <PageSchema faq={fm.faq} />
 
-  <!-- 1. Hero — full-bleed background photo + dark overlay, text left, compact lead form right. -->
-  <section
-    class="hero-section"
-    style={`background-image: url('${heroImage.src}');`}
-  >
-    <div class="hero-overlay"></div>
-    <div class="container hero-grid">
-      <div class="hero-text">
+  <!-- 1. HERO: full-bleed image, content left, quote form right -->
+  <section class="hero-section">
+    <Image
+      src={heroImage ?? HERO_PLACEHOLDER}
+      alt={fm.leadImage?.alt ?? `Professional water softener installation and service in ${site.city}, ${site.stateAbbr}`}
+      {...(heroImage ? {} : { width: 1376, height: 768 })}
+      format="webp"
+      quality="mid"
+      loading="eager"
+      class="hero-bg"
+    />
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <div class="hero-content">
         <div class="hero-badges">
-          <span class="hero-badge">✓ Licensed &amp; Insured</span>
-          <span class="hero-badge">✓ Free Water Test</span>
-          <span class="hero-badge">✓ Same Day Service</span>
-          <span class="hero-badge">✓ No Obligation</span>
+          {badges.map((badge) => <span class="hero-badge">{badge}</span>)}
         </div>
 
-        <h1>{site.businessName} - Expert Water Softener Services in {site.city}, {site.stateAbbr}</h1>
+        <h1 class="hero-h1">{fm.title}</h1>
 
+        <!-- Kept on the owner's instruction: the H3 sits directly under the H1 in the home hero. -->
         <h3 class="hero-subheading">Professional Water Softener Installation and Repair in {site.city}</h3>
 
-        <p class="hero-p">
-          {site.businessName} specializes in water softener installation, repair, and maintenance for
-          homes and businesses dealing with hard water.
-        </p>
+        <p class="hero-p" set:html={fm.openingHtml} />
 
-        <p class="hero-p">
-          {site.city}, {site.stateAbbr} water tests at {site.gpgLow}-{site.gpgHigh} GPG, classified as {site.gpgLabel}.
-          {" "}{site.waterAuthority} delivers this {site.waterSource} supply to every {site.city} home, leaving calcium
-          and magnesium deposits on fixtures and appliances within weeks. Free in-home water test available.
-        </p>
-
-        <div class="hero-actions">
-          {site.phoneNumber && site.phoneNumber !== "PHONE_NUMBER" ? (
-            <a href={`tel:${site.phoneNumber}`} class="hero-phone-btn">
-              📞 {site.phoneNumber}
-            </a>
-          ) : (
-            <a href="/contact/" class="hero-phone-btn">
-              📞 Call for a Free Consultation
-            </a>
-          )}
-        </div>
+        <a href={telHref} class="hero-phone-btn">
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3.5 1.5h2.2l1 3-1.6 1.2a9 9 0 0 0 4.2 4.2l1.2-1.6 3 1v2.2c0 .8-.7 1.4-1.4 1.3C7 12.4 3.6 9 3.2 3.9c-.1-.7.5-1.4 1.3-1.4Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" />
+          </svg>
+          {site.phoneNumber}
+        </a>
       </div>
 
-      <div class="hero-form-wrap">
-        <QuoteForm heading="Get a FREE Quote" compact />
+      <div class="hero-form-card" id="estimate">
+        <QuoteForm heading="Get a Free Estimate" compact />
       </div>
     </div>
   </section>
 
-  <!-- 2. Why We're the Best — first after the hero, per explicit request. -->
-  <section class="section best-section">
+  <!-- 2 to 9. Page copy: why choose us, services, hard water, process, FAQ, areas -->
+  <section class="section">
     <div class="container">
-      <h2 class="best-title">Why We're the Best Water Softener Installation Company in {site.city}, {site.stateAbbr} &amp; {site.region}</h2>
-      <div class="best-layout">
-        <div class="best-media">
-          <Image src={bestImage} alt={`Water softener specialists discussing a system installation in a ${site.city}, ${site.stateAbbr} home`} width={600} height={512} loading="lazy" />
-        </div>
-        <div class="best-content">
-          <ul class="best-list">
-            <li>Licensed water treatment specialist with 28+ years of residential and commercial experience</li>
-            <li>Over $3.7 million in completed projects for hotels, high-rise apartments, industrial facilities, and historic buildings</li>
-            <li>Factory-trained and certified by Kinetico, EcoWater, Culligan, Fleck, and Pentair</li>
-            <li>Salt-based softeners, salt-free conditioners, reverse osmosis, whole-home filtration, and iron removal, installed to manufacturer warranty standards</li>
-            <li>Hundreds of failed or poorly installed systems from other contractors <a href="/repair/">repaired and rescued</a></li>
-            <li>Lifetime workmanship warranty, 10-year component warranty, and a full replacement guarantee if your system fails to perform</li>
-          </ul>
-          <a class="best-cta" href="/quote/">Talk to a Water Softener Specialist &rsaquo;</a>
-        </div>
-      </div>
+      <ContentProse>
+        <Content />
+      </ContentProse>
     </div>
   </section>
 
-  <!-- 3. Best Water Softener {City} {site.stateAbbr} — sizing guidance, second. -->
-  <section class="section">
-    <div class="service-section-wrapper">
-      <h2 class="service-section-title">Best Water Softener {site.city} {site.stateAbbr}</h2>
-      <div class="service-section-grid service-section-grid-reverse">
-        <div class="service-section-text">
-          <p>
-            The right system is sized by grain capacity, not brand name — most households need
-            somewhere between 24,000 and 64,000 grains depending on household size, {site.gpgLow}-{site.gpgHigh}{" "}
-            GPG hardness, and daily water usage. An undersized system runs out of capacity early; an
-            oversized one wastes salt and water on every regeneration cycle.
-          </p>
-          <a class="service-learn-more" href="/water-softener-sizing/">Find Your Correct System Size →</a>
-        </div>
-        <div class="service-section-media">
-          <Image src={sizingImage} alt={`Water softener sizing guide for ${site.city}, ${site.stateAbbr}`} width={600} height={400} loading="lazy" />
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- Neighbourhood map: directly below the hard-water section. The importer splits the homepage copy there
+       (home.md up to it, home-after.md the rest); with no pins the map renders nothing and nothing is split. -->
+  <NeighbourhoodMap />
 
-  <!-- 4. Water Softener Installation and Maintenance {City} {site.stateAbbr} — third.
-       "Get Free Estimates" is no longer a separate section: the lead form
-       now lives in the hero itself (right column), so the form is
-       not duplicated further down the page. -->
-  <section class="section" style="background: var(--color-surface);">
-    <div class="service-section-wrapper">
-      <h2 class="service-section-title">Water Softener Installation and Maintenance {site.city} {site.stateAbbr}</h2>
-      <div class="service-section-grid">
-        <div class="service-section-text">
-          <p>
-            A salt-based ion exchange system is installed at your home's main water line, sized to your
-            household's daily water usage and {site.city}'s {site.gpgLow}-{site.gpgHigh} GPG hardness
-            level. Routine maintenance — salt refills and periodic resin checks — keeps the system
-            performing at full capacity for years.
-          </p>
-          <a class="service-learn-more" href="/installation/">See the Full Installation Process →</a>
-        </div>
-        <div class="service-section-media">
-          <Image src={installImage} alt={`Water softener installation in ${site.city}, ${site.stateAbbr}`} width={600} height={400} loading="lazy" />
-        </div>
+  {afterFm.split && (
+    <section class="section">
+      <div class="container">
+        <ContentProse>
+          <ContentAfter />
+        </ContentProse>
       </div>
-    </div>
-  </section>
-
-  <!-- 7. Water Softener {City} {site.stateAbbr} Cost -->
-  <section class="section">
-    <div class="service-section-wrapper">
-      <h2 class="service-section-title">Water Softener {site.city} {site.stateAbbr} Cost</h2>
-      <div class="service-section-grid">
-        <div class="service-section-text">
-          <p>
-            Most {site.city} homeowners pay between <strong>$800 and $3,500</strong> for a fully
-            installed water softener, depending on system size, {site.gpgLabel.toLowerCase()} water
-            demands, and existing plumbing. We confirm exact pricing after a free in-home water test —
-            never before.
-          </p>
-          <a class="service-learn-more" href="/installation/">See the Full Cost Breakdown →</a>
-        </div>
-        <div class="service-section-media">
-          <Image src={pricingImage} alt={`Water softener installation cost in ${site.city}, ${site.stateAbbr}`} width={600} height={400} loading="lazy" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 8. Whole Home Filtration {City} {site.stateAbbr} -->
-  <section class="section" style="background: var(--color-surface);">
-    <div class="service-section-wrapper">
-      <h2 class="service-section-title">Whole Home Filtration {site.city} {site.stateAbbr}</h2>
-      <div class="service-section-grid service-section-grid-reverse">
-        <div class="service-section-text">
-          <p>
-            A softener/filter combo system pairs hardness removal with carbon filtration, addressing
-            chlorine, sediment, and taste issues from {site.waterAuthority}'s supply at every tap in the
-            house — not just the kitchen sink.
-          </p>
-          <a class="service-learn-more" href="/whole-home-filtration/">See Whole Home Filtration Options →</a>
-        </div>
-        <div class="service-section-media">
-          <Image src={filtrationImage} alt={`Whole home filtration system for ${site.city}, ${site.stateAbbr}`} width={600} height={400} loading="lazy" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 9. Reverse Osmosis Systems {City} {site.stateAbbr} -->
-  <section class="section">
-    <div class="service-section-wrapper">
-      <h2 class="service-section-title">Reverse Osmosis Systems {site.city} {site.stateAbbr}</h2>
-      <div class="service-section-grid">
-        <div class="service-section-text">
-          <p>
-            An under-sink reverse osmosis system removes up to 99% of dissolved solids for the cleanest
-            possible drinking and cooking water — a separate, targeted upgrade from whole-home softening,
-            installed specifically at the kitchen tap.
-          </p>
-          <a class="service-learn-more" href="/reverse-osmosis/">See Reverse Osmosis Systems →</a>
-        </div>
-        <div class="service-section-media">
-          <Image src={roImage} alt={`Reverse osmosis system for ${site.city}, ${site.stateAbbr}`} width={600} height={400} loading="lazy" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 10. Free Water Test and Consultation {City} {site.stateAbbr} -->
-  <section class="section" style="background: var(--color-surface);">
-    <div class="service-section-wrapper">
-      <h2 class="service-section-title">Free Water Test and Consultation {site.city} {site.stateAbbr}</h2>
-      <div class="service-section-grid service-section-grid-reverse">
-        <div class="service-section-text">
-          <p>
-            Every consultation starts with an in-home hardness test using a digital TDS meter — a real
-            reading for your specific home, not a citywide estimate — before we recommend any system or
-            quote any price.
-          </p>
-          <a class="service-learn-more" href="/free-water-test/">Book Your Free Water Test →</a>
-        </div>
-        <div class="service-section-media">
-          <Image src={waterTestImage} alt={`Free water hardness test in ${site.city}, ${site.stateAbbr}`} width={600} height={400} loading="lazy" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 11. Water Softener Repair and Maintenance {City} {site.stateAbbr} -->
-  <section class="section">
-    <div class="service-section-wrapper">
-      <h2 class="service-section-title">Water Softener Repair and Maintenance {site.city} {site.stateAbbr}</h2>
-      <div class="service-section-grid">
-        <div class="service-section-text">
-          <p>
-            From a system that won't regenerate to one that's stopped softening entirely, we diagnose
-            and repair all major brands — Kinetico, EcoWater, Culligan, Fleck, and Pentair included —
-            often rescuing systems other contractors installed poorly.
-          </p>
-          <a class="service-learn-more" href="/repair/">See Repair & Maintenance Services →</a>
-        </div>
-        <div class="service-section-media">
-          <Image src={repairImage} alt={`Water softener repair in ${site.city}, ${site.stateAbbr}`} width={600} height={400} loading="lazy" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 12. Water Softener Resin Bed Replacement {City} {site.stateAbbr} -->
-  <section class="section" style="background: var(--color-surface);">
-    <div class="service-section-wrapper">
-      <h2 class="service-section-title">Water Softener Resin Bed Replacement {site.city} {site.stateAbbr}</h2>
-      <div class="service-section-grid service-section-grid-reverse">
-        <div class="service-section-text">
-          <p>
-            At {site.gpgLow}-{site.gpgHigh} GPG, resin beads wear out faster than in milder-water
-            markets — iron fouling, chlorine damage, and years of regeneration cycles gradually reduce
-            capacity until the system can no longer fully soften your water.
-          </p>
-          <a class="service-learn-more" href="/resin-bed-replacement/">See Resin Bed Replacement →</a>
-        </div>
-        <div class="service-section-media">
-          <Image src={resinImage} alt={`Water softener resin bed replacement in ${site.city}, ${site.stateAbbr}`} width={600} height={400} loading="lazy" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 13. Best Brine Tank Cleaning {City} {site.stateAbbr} -->
-  <section class="section">
-    <div class="service-section-wrapper">
-      <h2 class="service-section-title">Best Brine Tank Cleaning {site.city} {site.stateAbbr}</h2>
-      <div class="service-section-grid">
-        <div class="service-section-text">
-          <p>
-            Salt bridging and mushing inside the brine tank are the most common reasons a softener
-            silently stops working — the system looks fine, but no salt is actually reaching the
-            resin bed. A full brine tank cleaning clears this out and restores proper regeneration.
-          </p>
-          <a class="service-learn-more" href="/brine-tank-cleaning/">See Brine Tank Cleaning →</a>
-        </div>
-        <div class="service-section-media">
-          <Image src={brineImage} alt={`Brine tank cleaning service in ${site.city}, ${site.stateAbbr}`} width={600} height={400} loading="lazy" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 16. RoundRockMap — neighbourhood hardness map, see PROVISION.md Step 5b -->
-  <RoundRockMap />
-
-  <!-- 17. FAQ accordion — details/summary, no JavaScript (unchanged) -->
-  <section class="homepage-faq-section">
-    <div class="homepage-faq-inner">
-      <div class="homepage-faq-header">
-        <h2>Water Softener Questions, Answered</h2>
-        <p>Common questions from {site.city} homeowners about hard water and water softener installation.</p>
-      </div>
-
-      <div class="homepage-faq-list">
-        {faqs.map((item) => (
-          <details class="faq-item">
-            <summary>{item.q}</summary>
-            <div class="faq-answer">{item.a}</div>
-          </details>
-        ))}
-      </div>
-
-      <div class="faq-footer-link">
-        <a href="/faq/">See all FAQs →</a>
-      </div>
-    </div>
-  </section>
+    </section>
+  )}
 
   <style>
-    /* ---------- 1. Hero — full-bleed background photo + dark overlay ---------- */
+    /* ---------- Hero: full-bleed image, split layout ---------- */
     .hero-section {
       position: relative;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      padding: clamp(72px, 14vw, 140px) 24px;
+      min-height: 0;
+      display: flex;
+      align-items: center;
       overflow: hidden;
     }
+
+    .hero-section :global(.hero-bg) {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    /* Darker on the left where the text sits, lighter toward the form */
     .hero-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(100deg, rgba(5, 20, 23, 0.86) 0%, rgba(5, 20, 23, 0.72) 45%, rgba(5, 20, 23, 0.45) 100%);
+      background: linear-gradient(
+        to right,
+        rgba(12, 29, 46, 0.86) 0%,
+        rgba(12, 29, 46, 0.76) 50%,
+        rgba(12, 29, 46, 0.5) 100%
+      );
       z-index: 1;
     }
-    .hero-grid {
+
+    .hero-inner {
       position: relative;
       z-index: 2;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 36px 24px 44px;
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 48px;
+      grid-template-columns: 1fr 380px;
+      gap: 44px;
       align-items: start;
+      width: 100%;
     }
-    .hero-text { text-align: left; }
-    .hero-section h1 {
-      color: #ffffff;
-      font-size: clamp(32px, 4.2vw, 48px);
-      line-height: 1.1;
-      letter-spacing: -0.02em;
-      margin-bottom: 20px;
-    }
-    .hero-subheading {
-      font-family: var(--font-body);
-      font-style: italic;
-      font-weight: 600;
-      color: var(--color-accent);
-      font-size: clamp(17px, 1.6vw, 20px);
-      margin: 0 0 16px;
-    }
-    .hero-p {
-      font-family: var(--font-body);
-      font-size: 16px;
-      line-height: 1.75;
-      color: rgba(255, 255, 255, 0.86);
-      max-width: 56ch;
-      margin: 0 0 20px;
-    }
+
     .hero-badges {
       display: flex;
       flex-wrap: wrap;
@@ -390,231 +150,86 @@ const faqs = [
       font-family: var(--font-body);
       font-size: 12px;
       font-weight: 600;
-      color: #ffffff;
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      border-radius: var(--radius-full, 9999px);
-      padding: 4px 12px;
+      color: rgba(255, 255, 255, 0.85);
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: var(--radius-sm);
+      padding: 4px 10px;
+      letter-spacing: 0.02em;
     }
-    .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+
+    .hero-h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(26px, 3.7vw, 42px);
+      color: #ffffff;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+    }
+
+    /* Italic accent-tinted subheading under the H1 (the live site's style; the light accent tint keeps it legible on the dark hero) */
+    .hero-subheading {
+      font-family: var(--font-body);
+      font-style: italic;
+      font-weight: 600;
+      color: var(--color-accent-light);
+      font-size: clamp(17px, 1.6vw, 20px);
+      margin: -6px 0 16px;
+    }
+
+    .hero-p {
+      font-family: var(--font-body);
+      font-size: 15.5px;
+      color: rgba(255, 255, 255, 0.86);
+      line-height: 1.75;
+      margin-bottom: 16px;
+      max-width: 560px;
+    }
+    .hero-p :global(a) {
+      color: #ffffff;
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .hero-p :global(a:hover) { color: var(--color-accent-light); }
+    .hero-p :global(a:focus-visible) { outline: 3px solid #ffffff; outline-offset: 2px; border-radius: 2px; }
+
     .hero-phone-btn {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      padding: 14px 28px;
-      background: var(--color-primary);
-      color: #ffffff;
-      border-radius: var(--radius-brand);
-      font-family: var(--font-body);
-      font-size: 16px;
-      font-weight: 700;
-      text-decoration: none;
-      box-shadow: var(--shadow-card);
-      transition: transform 150ms ease, box-shadow 150ms ease, background-color 150ms ease;
-    }
-    .hero-phone-btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-floating); background: var(--color-accent); }
-    .hero-phone-btn:focus-visible { outline: 3px solid var(--color-primary); outline-offset: 3px; }
-    .hero-phone-btn:active { transform: scale(0.98); }
-    /* Semi-transparent variant of QuoteForm's compact mode for the hero
-       only — QuoteForm.astro itself is untouched, so /quote/ and every
-       other embed keeps the full-size default. Fields stack single-column,
-       matching huntingtonbeacheliteroofing.com's hero form exactly. */
-    .hero-form-wrap :global(.quote-form) {
-      background: rgba(255, 255, 255, 0.9);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      box-shadow: 0 24px 48px -16px rgba(5, 20, 23, 0.5);
-    }
-    @media (max-width: 900px) {
-      .hero-grid { grid-template-columns: 1fr; }
-    }
-
-    /* ---------- 2. Why We're the Best — image left, bullet list right ---------- */
-    .best-section { border-top: 1px solid var(--color-border); }
-    .best-title {
-      font-size: clamp(1.5rem, 3vw, 2.1rem);
-      line-height: 1.2;
-      text-align: center;
-      max-width: 820px;
-      margin: 0 auto 40px;
-    }
-    .best-layout {
-      display: grid;
-      grid-template-columns: minmax(0, 400px) minmax(0, 1fr);
-      gap: 48px;
-      align-items: start;
-      max-width: 1040px;
-      margin: 0 auto;
-    }
-    .best-media {
-      position: sticky;
-      top: 110px;
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      box-shadow: 0 20px 40px -18px rgba(10, 46, 51, 0.35);
-    }
-    .best-media img { display: block; width: 100%; height: auto; }
-    .best-list {
-      list-style: disc;
-      margin: 0 0 28px;
-      padding-left: 22px;
-      display: flex;
-      flex-direction: column;
       gap: 10px;
-      font-family: var(--font-body);
-      font-size: 16px;
-      line-height: 1.6;
-      color: var(--color-text);
-    }
-    .best-list li { display: list-item; }
-    .best-list a { color: var(--color-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
-    .best-list a:hover { color: var(--color-accent); }
-    .best-list li::marker { color: var(--color-accent); }
-    .best-cta {
-      display: inline-block;
+      margin-top: 8px;
       padding: 14px 28px;
       background: var(--color-accent);
-      color: #fff;
+      color: #ffffff;
+      border-radius: var(--radius-md);
       font-family: var(--font-body);
-      font-weight: 600;
-      font-size: 15px;
-      border-radius: 999px;
-      text-decoration: none;
-      transition: transform 160ms ease, box-shadow 160ms ease;
-    }
-    .best-cta:hover { transform: translateY(-2px); box-shadow: 0 10px 22px -10px rgba(230, 81, 0, 0.7); }
-    .best-cta:focus-visible { outline: 3px solid var(--color-primary); outline-offset: 3px; }
-    @media (max-width: 860px) {
-      .best-layout { grid-template-columns: 1fr; gap: 28px; }
-      .best-media { position: static; max-width: 420px; margin: 0 auto; }
-    }
-
-
-    /* ---------- 4–12. Alternating image-text service sections ---------- */
-    .service-section-wrapper { max-width: 1000px; margin: 0 auto; }
-    .service-section-title {
-      font-family: var(--font-heading);
-      font-size: clamp(24px, 3.5vw, 38px);
-      letter-spacing: -0.02em;
-      color: var(--surface-footer);
-      margin-bottom: 28px;
-      line-height: 1.2;
-      width: 100%;
-    }
-    .service-section-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 48px;
-      align-items: center;
-    }
-    .service-section-text { order: 1; }
-    .service-section-media { order: 2; }
-    .service-section-grid-reverse .service-section-text { order: 2; }
-    .service-section-grid-reverse .service-section-media { order: 1; }
-    .service-section-media img {
-      display: block;
-      width: 100%;
-      height: auto;
-      border-radius: var(--radius-lg);
-    }
-    .service-learn-more {
-      display: inline-block;
-      font-family: var(--font-body);
-      font-weight: 600;
-      font-size: 13px;
-      color: var(--color-accent);
-      text-decoration: none;
-      margin-top: 12px;
-    }
-    .service-learn-more:hover { text-decoration: underline; }
-    .service-learn-more:focus-visible { outline: 3px solid var(--color-primary); outline-offset: 2px; }
-    @media (max-width: 860px) {
-      .service-section-title { font-size: clamp(20px, 5vw, 28px); margin-bottom: 20px; }
-      .service-section-grid { grid-template-columns: 1fr; gap: 24px; }
-      .service-section-grid .service-section-text,
-      .service-section-grid .service-section-media,
-      .service-section-grid-reverse .service-section-text,
-      .service-section-grid-reverse .service-section-media {
-        order: initial;
-      }
-    }
-
-    /* ---------- 17. FAQ accordion ---------- */
-    .homepage-faq-section { padding: 72px 24px; background: var(--surface-elevated); }
-    .homepage-faq-inner { max-width: 860px; margin: 0 auto; }
-    .homepage-faq-header { text-align: center; margin-bottom: 40px; }
-    .homepage-faq-header h2 {
-      font-family: var(--font-heading);
-      font-size: clamp(24px, 3.5vw, 38px);
-      letter-spacing: -0.02em;
-      color: var(--surface-footer);
-      margin-bottom: 12px;
-    }
-    .homepage-faq-header p {
-      font-family: var(--font-body);
-      font-size: 16px;
-      color: var(--color-text-muted);
-      line-height: 1.6;
-    }
-    .homepage-faq-list {
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      margin-bottom: 28px;
-    }
-    .faq-item { border-bottom: 1px solid var(--color-border); }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-item summary {
-      padding: 20px 24px;
-      font-family: var(--font-heading);
       font-size: 18px;
-      color: var(--surface-footer);
-      cursor: pointer;
-      list-style: none;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 16px;
-      user-select: none;
-      transition: background-color 150ms ease;
-    }
-    .faq-item summary:hover { background: #ffffff; }
-    .faq-item summary:focus-visible { outline: 3px solid var(--color-primary); outline-offset: -3px; }
-    .faq-item summary::after {
-      content: '+';
-      font-family: var(--font-body);
-      font-size: 22px;
-      color: var(--color-primary);
-      font-weight: 300;
-      flex-shrink: 0;
-      line-height: 1;
-    }
-    .faq-item[open] summary::after { content: '\2212'; }
-    .faq-item summary::-webkit-details-marker { display: none; }
-    .faq-item summary::marker { display: none; }
-    .faq-answer {
-      padding: 4px 24px 22px;
-      font-family: var(--font-body);
-      font-size: 15px;
-      color: var(--color-text-muted);
-      line-height: 1.75;
-    }
-    .faq-footer-link { text-align: center; }
-    .faq-footer-link a {
-      font-family: var(--font-body);
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--color-accent);
+      font-weight: 700;
       text-decoration: none;
-      transition: color 150ms ease;
+      box-shadow: 0 2px 12px rgba(232, 119, 34, 0.35);
+      transition: background-color 150ms ease, transform 150ms ease, box-shadow 150ms ease;
     }
-    .faq-footer-link a:hover { color: var(--color-primary); text-decoration: underline; }
-    .faq-footer-link a:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 2px; }
+    .hero-phone-btn:hover {
+      color: #ffffff;
+      background: var(--color-accent-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(232, 119, 34, 0.45);
+    }
+    .hero-phone-btn:focus-visible { outline: 3px solid #ffffff; outline-offset: 3px; }
+    .hero-phone-btn:active { transform: scale(0.98); }
 
-    @media (max-width: 640px) {
-      .homepage-faq-section { padding: 48px 16px; }
-      .faq-item summary { font-size: 16px; padding: 16px 20px; }
-      .faq-answer { padding: 4px 20px 18px; }
+    /* The card chrome lives on QuoteForm's own compact styles */
+    .hero-form-card { align-self: start; scroll-margin-top: 96px; }
+
+    @media (max-width: 900px) {
+      .hero-section { min-height: auto; }
+      .hero-inner {
+        grid-template-columns: 1fr;
+        padding: 48px 20px;
+        gap: 32px;
+      }
+      .hero-overlay { background: rgba(12, 29, 46, 0.82); }
     }
   </style>
 </Layout>

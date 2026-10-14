@@ -163,6 +163,9 @@ export interface SiteConfig {
   gpgHigh: number;
   /** Human label for the hardness range, e.g. "Very Hard" | "Extreme" */
   gpgLabel: string;
+  /** Set to false while the hardness range is not confirmed by the utility. The About page then shows
+   * a [VERIFY] marker beside the figure. Omit (or true) once the utility's own number is in. */
+  hardnessVerified?: boolean;
   /** Where the city's tap water comes from, e.g. "Municipal reservoir supply" */
   waterSource: string;
   /** The utility/authority that manages the water supply */
@@ -226,6 +229,11 @@ export interface SiteConfig {
   /** Google Business Profile URL — blank until claimed; used as the
    * footer link and the LocalBusiness schema's sameAs URL. */
   googleBusinessUrl: string;
+  /** Social profile URLs shown as icons in the footer. Leave a network blank until the profile exists: a blank one
+   * renders as an inert icon (no link). Filled-in URLs are also added to the LocalBusiness schema's sameAs. */
+  socialLinks: { facebook: string; instagram: string; pinterest: string; x: string; youtube: string };
+  /** Optional Google Search Console verification token, rendered as a meta tag in the page head */
+  googleSiteVerification?: string;
   /** Fully-qualified site URL derived from `domain`, e.g. "https://example.com" */
   siteUrl: string;
 
@@ -282,31 +290,20 @@ export const siteConfig: SiteConfig = {
   domain,
 
   // Water hardness data
-  gpgLow: 11,
-  gpgHigh: 15,
+  gpgLow: 14.6,
+  gpgHigh: 14.6,
   gpgLabel: "Very Hard",
-  waterSource:
-    "Lake Georgetown (via the Brazos River Authority), Lake Travis (via the Brushy Creek Regional Utility Authority), supplemented by Edwards Aquifer groundwater",
+  waterSource: "Surface water primarily from Lake Georgetown, groundwater from the Edwards Aquifer, and surface water from Lake Travis treated by the Brushy Creek Regional Utility Authority",
   waterAuthority: "City of Round Rock Utilities",
-
   // SEO
   primaryKeyword: "water softener round rock tx",
   searchVol: 0,
-  metaDescription:
-    "Water softener installation in Round Rock, TX. Round Rock tap water tests at 11-15 GPG. Get a free quote from Round Rock Elite Water Softener today.",
-
+  metaDescription: "Water softener installation, repair and replacement in Round Rock, TX. The City's 2025 report puts average hardness at 249 mg/L, about 14.6 gpg. Free estimate.",
   // Local data
-  population: "119,468", // 2020 Census,
+  population: "119,468",
   county: "Williamson County",
-  neighbourhoods: [
-    "Teravista",
-    "Forest Creek",
-    "Paloma Lake",
-    "Behrens Ranch",
-    "Sonoma",
-  ],
+  neighbourhoods: ["Teravista", "Forest Creek", "Paloma Lake", "Behrens Ranch", "Sonoma"],
   zipCodes: ["78664", "78665", "78681"],
-
   // Monetisation
   affiliateSoftener: "https://springwellwater.com/follow/softener/",
   affiliateCombo: "https://springwellwater.com/follow/combo/",
@@ -314,10 +311,11 @@ export const siteConfig: SiteConfig = {
 
   // Business identity — edit directly, no CMS
   businessName: "Round Rock Elite Water Softener",
-  phoneNumber: "PHONE_NUMBER",
+  phoneNumber: "(512) 000-0000",
   businessEmail: "BUSINESS_EMAIL",
   address: "",
   googleBusinessUrl: "",
+  socialLinks: { facebook: "", instagram: "", pinterest: "", x: "", youtube: "" },
   siteUrl: `https://${domain}`,
 
   // About page facts — edit directly, no CMS

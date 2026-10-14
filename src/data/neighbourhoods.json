@@ -1,0 +1,44 @@
+{
+  "hardness": {
+    "value": "14.6",
+    "unit": "GPG",
+    "label": "Very Hard",
+    "short": "14.6 GPG avg (2025)",
+    "intro": "The City of Round Rock's 2025 water quality report put average hardness at 249 mg/L, about 14.6 GPG, and calls it very hard water. Click a neighbourhood to see what that means for your home.",
+    "reportNote": "The City of Round Rock's 2025 report gave a citywide average of 249 mg/L (14.6 GPG), and its results table lists a range of 100 to 358 ppm. The U.S. Geological Survey rates over 180 mg/L as \"Very Hard.\"",
+    "footnote": "Hardness is the City of Round Rock's citywide figure from its 2025 report; it can read higher or lower at your tap, and it does not cover private wells or any neighbourhood served by another utility."
+  },
+  "issues": [
+    "White scale on faucets and showerheads",
+    "Spotting and film on glassware and dishes",
+    "Scale buildup in water heaters and appliances",
+    "Soap scum, dry skin and stiff laundry"
+  ],
+  "neighbourhoods": [
+    {
+      "name": "Teravista",
+      "lat": 30.5714,
+      "lng": -97.6699
+    },
+    {
+      "name": "Forest Creek",
+      "lat": 30.50859,
+      "lng": -97.5943493
+    },
+    {
+      "name": "Paloma Lake",
+      "lat": 30.5603,
+      "lng": -97.6138
+    },
+    {
+      "name": "Behrens Ranch",
+      "lat": 30.5379606,
+      "lng": -97.7235292
+    },
+    {
+      "name": "Sonoma",
+      "lat": 30.5092241,
+      "lng": -97.629095
+    }
+  ]
+}
