@@ -20,9 +20,9 @@ markerCount: 0
 
 We serve Teravista, Forest Creek, Paloma Lake, Behrens Ranch and Sonoma, along with every other Round Rock neighborhood. Each neighborhood page is published once its water provider is confirmed.
 
-- Teravista
+- [Teravista](/water-softener-teravista-tx/)
 - Forest Creek
-- Paloma Lake
+- [Paloma Lake](/water-softener-paloma-lake-tx/)
 - Behrens Ranch
 - Sonoma
 
@@ -30,7 +30,7 @@ Not sure whether your home is in our area? Call or request an estimate, and we w
 
 ## Why Water Varies Across Round Rock
 
-Hardness changes because the City of Round Rock blends surface water from Lake Georgetown and Lake Travis with Edwards Aquifer groundwater. Its 2025 results table lists hardness from 100 to 358 ppm, about 5.8 to 20.9 grains per gallon, with an average of 258 ppm. The City serves water to customers on its system, and homes outside it, such as private wells, have their own water, so a free test at your tap gives the number that matters.
+Hardness changes because the City of Round Rock blends surface water from Lake Georgetown and Lake Travis with Edwards Aquifer groundwater. Its 2025 results table lists hardness from 100 to 358 ppm, about 5.8 to 20.9 grains per gallon, with an average of 258 ppm. The City serves water to customers on its system and sells wholesale water to municipal utility districts: Teravista is served by TeraVista Williamson County MUD No. 10 and No. 11, and Paloma Lake by Paloma Lake MUD No. 1 and No. 2. Homes outside any system, such as private wells, have their own water, so a free test at your tap gives the number that matters.
 
 
 
