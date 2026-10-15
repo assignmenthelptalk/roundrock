@@ -145,7 +145,7 @@ Dual tank and commercial water softeners, water conditioners, reverse osmosis an
 
 ## Why Is Round Rock Water So Hard?
 
-Round Rock water is hard because the lakes and aquifer it draws from sit in limestone country. According to a 1987 U.S. Geological Survey report by M. E. Dorsey and Diana L. Slagle titled “Hydrologic and Geologic Data for the Edwards Aquifer Recharge Zone near Georgetown, Williamson County, Texas, 1986-87,” the Edwards aquifer in that area includes the Edwards Limestone, the overlying Georgetown Limestone and the underlying Comanche Peak Limestone. The same report measured dissolved solids from 320 to 1,300 milligrams per liter in samples from selected wells and from 251 to 290 milligrams per liter in samples from selected streams.
+Round Rock water is hard because the lakes and aquifer it draws from sit in limestone country. According to a 1987 U.S. Geological Survey report by M. E. Dorsey and Diana L. Slagle titled “Hydrologic and Geologic Data for the Edwards Aquifer Recharge Zone near Georgetown, Williamson County, Texas, 1986-87,” the Edwards aquifer in that area includes the Edwards Limestone, the overlying Georgetown Limestone and the underlying Comanche Peak Limestone. The same report measured dissolved solids from 320 to 1,300 milligrams per liter in samples from selected wells and from 251 to 290 milligrams per liter in samples from selected streams. A 2026 study in PLOS Water that tested tap water in Austin’s Colony, a central Texas neighbourhood east of Austin, found that 77 percent of untreated samples were very hard, and it notes that more than 60 percent of Texas counties have aquifers with very hard water.
 
 <div class="issues-split">
 
