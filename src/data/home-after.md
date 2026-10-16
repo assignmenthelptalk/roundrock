@@ -108,4 +108,4 @@ We serve Round Rock and Williamson County, including Teravista, Forest Creek, Pa
 
 ## Where Do You Install Water Softeners Around Round Rock, TX?
 
-Round Rock Elite Water Softener provides water softener installation, replacement, repair and water testing across Round Rock and Williamson County, including Teravista, Forest Creek, Paloma Lake, Behrens Ranch and Sonoma. Whether your home uses City of Round Rock water or a private well, call or request a free estimate and we will confirm service to your address.
+Round Rock Apex Water Softener provides water softener installation, replacement, repair and water testing across Round Rock and Williamson County, including Teravista, Forest Creek, Paloma Lake, Behrens Ranch and Sonoma. Whether your home uses City of Round Rock water or a private well, call or request a free estimate and we will confirm service to your address.

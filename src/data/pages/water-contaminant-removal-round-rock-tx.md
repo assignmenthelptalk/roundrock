@@ -1,18 +1,18 @@
 ---
 title: "Water Contaminant Removal in Round Rock, TX | Trusted Local Specialists"
-seoTitle: "Water Contaminant Removal Round Rock, TX | Round Rock Elite Water Softener"
+seoTitle: "Water Contaminant Removal Round Rock, TX | Round Rock Apex Water Softener"
 description: "Water contaminant removal in Round Rock, TX: match the filter to the contaminant, from chlorine to sediment. Test first, then treat. Free estimate."
 metaDraft: false
 slug: "/water-contaminant-removal-round-rock-tx/"
 pageType: "service"
 parentSlug: "/water-treatment-and-testing/"
 crumb: "Water Contaminant Removal"
-openingHtml: "Water contaminant removal in Round Rock, TX installs filters that reduce specific substances in your tap water, such as lead, arsenic, fluoride, nitrate, PFAS and chloramine. <a href=\"/\">Round Rock Elite Water Softener</a> starts with a water test, then recommends the filter that targets what the test finds. Request a free estimate and a technician will explain your options."
+openingHtml: "Water contaminant removal in Round Rock, TX installs filters that reduce specific substances in your tap water, such as lead, arsenic, fluoride, nitrate, PFAS and chloramine. <a href=\"/\">Round Rock Apex Water Softener</a> starts with a water test, then recommends the filter that targets what the test finds. Request a free estimate and a technician will explain your options."
 formHeading: ""
 formIntro: ""
 leadImage: null
 images: [{"file":"water-contaminant-removal-round-rock-tx.webp","alt":"Water contaminant removal Round Rock TX filter installation","exists":false},{"file":"card-lead-and-arsenic-removal-round-rock-tx.webp","alt":"Lead and Arsenic Removal Round Rock TX","exists":false},{"file":"card-chloramine-and-chlorine-removal-round-rock-tx.webp","alt":"Chloramine and Chlorine Removal Round Rock TX","exists":false},{"file":"card-fluoride-filter-installation-round-rock-tx.webp","alt":"Fluoride Filter Installation Round Rock TX","exists":false},{"file":"card-pfas-water-filter-round-rock-tx.webp","alt":"PFAS Water Filter Round Rock TX","exists":false},{"file":"card-nitrate-filter-installation-round-rock-tx.webp","alt":"Nitrate Filter Installation Round Rock TX","exists":false},{"file":"card-voc-volatile-organic-compound-filter-round-rock-tx.webp","alt":"VOC (Volatile Organic Compound) Filter Round Rock TX","exists":false}]
-faq: [{"q":"Does one filter remove every contaminant?","a":"No. Each contaminant needs its own method, and reverse osmosis covers the most. A test tells us which ones you need."},{"q":"Is Round Rock tap water safe?","a":"City reports list results against EPA limits. For your own tap, a home test checks what the report cannot, such as your plumbing."},{"q":"How do I know a filter really works?","a":"Look for certification to NSF/ANSI standards for the specific contaminant, and retest your water after installation."},{"q":"Can a water softener remove these contaminants?","a":"No. A softener removes hardness. Contaminant removal needs a different filter."},{"q":"What does contaminant removal cost?","a":"It depends on the contaminant. The estimate is free and itemized. Round Rock Elite Water Softener TX provides water contaminant removal for homes and businesses across Round Rock and Williamson County."}]
+faq: [{"q":"Does one filter remove every contaminant?","a":"No. Each contaminant needs its own method, and reverse osmosis covers the most. A test tells us which ones you need."},{"q":"Is Round Rock tap water safe?","a":"City reports list results against EPA limits. For your own tap, a home test checks what the report cannot, such as your plumbing."},{"q":"How do I know a filter really works?","a":"Look for certification to NSF/ANSI standards for the specific contaminant, and retest your water after installation."},{"q":"Can a water softener remove these contaminants?","a":"No. A softener removes hardness. Contaminant removal needs a different filter."},{"q":"What does contaminant removal cost?","a":"It depends on the contaminant. The estimate is free and itemized. Round Rock Apex Water Softener TX provides water contaminant removal for homes and businesses across Round Rock and Williamson County."}]
 markerCount: 0
 ---
 
@@ -147,7 +147,7 @@ It depends on the contaminant. The estimate is free and itemized.
 
 
 
-[Round Rock Elite Water Softener TX](/) provides water contaminant removal for homes and businesses across Round Rock and Williamson County.
+[Round Rock Apex Water Softener TX](/) provides water contaminant removal for homes and businesses across Round Rock and Williamson County.
 
 </details>
 
@@ -155,4 +155,4 @@ It depends on the contaminant. The estimate is free and itemized.
 
 ## Get Your Free Estimate
 
-Request a free water contaminant removal estimate. We will contact you to confirm a time. [Get a Free Estimate](#estimate) or return to Round Rock Elite Water Softener for every service we offer.
+Request a free water contaminant removal estimate. We will contact you to confirm a time. [Get a Free Estimate](#estimate) or return to Round Rock Apex Water Softener for every service we offer.

@@ -1,18 +1,18 @@
 ---
 title: "Reverse Osmosis System Installation in Round Rock, TX | Trusted Local Specialists"
-seoTitle: "Reverse Osmosis Round Rock, TX | Round Rock Elite Water Softener"
+seoTitle: "Reverse Osmosis Round Rock, TX | Round Rock Apex Water Softener"
 description: "Reverse osmosis system installation in Round Rock, TX for drinking water at the tap. What RO removes and how it pairs with a softener. Free estimate."
 metaDraft: false
 slug: "/reverse-osmosis-installation/"
 pageType: "service"
 parentSlug: "/water-treatment-and-testing/"
 crumb: "Reverse Osmosis System Installation"
-openingHtml: "Reverse osmosis system installation in Round Rock, TX adds a membrane filter that removes most dissolved solids from your drinking and cooking water. <a href=\"/\">Round Rock Elite Water Softener</a> installs under-sink and whole-house reverse osmosis systems and replaces worn membranes. Request a free estimate and a technician will test your water and recommend a system."
+openingHtml: "Reverse osmosis system installation in Round Rock, TX adds a membrane filter that removes most dissolved solids from your drinking and cooking water. <a href=\"/\">Round Rock Apex Water Softener</a> installs under-sink and whole-house reverse osmosis systems and replaces worn membranes. Request a free estimate and a technician will test your water and recommend a system."
 formHeading: ""
 formIntro: ""
 leadImage: {"file":"reverse-osmosis-installation-round-rock-tx.webp","alt":"Reverse osmosis installation Round Rock TX under sink system"}
 images: [{"file":"reverse-osmosis-installation-round-rock-tx.webp","alt":"Reverse osmosis installation Round Rock TX under sink system","exists":true},{"file":"card-how-reverse-osmosis-systems-work-round-rock-tx.webp","alt":"How Reverse Osmosis Systems Work Round Rock TX","exists":false},{"file":"card-under-sink-ro-installation-round-rock-tx.webp","alt":"Under Sink RO Installation Round Rock TX","exists":false},{"file":"card-whole-house-ro-systems-round-rock-tx.webp","alt":"Whole House RO Systems Round Rock TX","exists":false},{"file":"card-ro-membrane-replacement-round-rock-tx.webp","alt":"RO Membrane Replacement Round Rock TX","exists":false},{"file":"card-ro-and-water-softener-combination-round-rock-tx.webp","alt":"RO and Water Softener Combination Round Rock TX","exists":false}]
-faq: [{"q":"Does reverse osmosis remove hard water minerals?","a":"Yes, RO removes most dissolved minerals from the water it treats, but hard water scales the membrane, so pairing RO with a softener is best."},{"q":"How much water does an RO system waste?","a":"RO sends reject water to the drain. The ratio depends on the system and water pressure. Most traditional systems send about 3 to 4 gallons of water to the drain for every gallon of purified water, while high-efficiency models get closer to 2 to 1."},{"q":"How often do I change RO filters?","a":"Sediment and carbon filters usually change every six to twelve months, and the membrane every two to five years. Follow your system's guidance."},{"q":"Does RO make water taste different?","a":"Yes. RO water tastes cleaner and flatter because minerals are removed."},{"q":"Can you install RO in my kitchen?","a":"Yes, under-sink installation is our most common RO job. Round Rock Elite Water Softener TX provides reverse osmosis system installation for homes and businesses across Round Rock and Williamson County."}]
+faq: [{"q":"Does reverse osmosis remove hard water minerals?","a":"Yes, RO removes most dissolved minerals from the water it treats, but hard water scales the membrane, so pairing RO with a softener is best."},{"q":"How much water does an RO system waste?","a":"RO sends reject water to the drain. The ratio depends on the system and water pressure. Most traditional systems send about 3 to 4 gallons of water to the drain for every gallon of purified water, while high-efficiency models get closer to 2 to 1."},{"q":"How often do I change RO filters?","a":"Sediment and carbon filters usually change every six to twelve months, and the membrane every two to five years. Follow your system's guidance."},{"q":"Does RO make water taste different?","a":"Yes. RO water tastes cleaner and flatter because minerals are removed."},{"q":"Can you install RO in my kitchen?","a":"Yes, under-sink installation is our most common RO job. Round Rock Apex Water Softener TX provides reverse osmosis system installation for homes and businesses across Round Rock and Williamson County."}]
 markerCount: 0
 ---
 
@@ -135,7 +135,7 @@ Yes, under-sink installation is our most common RO job.
 
 
 
-[Round Rock Elite Water Softener TX](/) provides reverse osmosis system installation for homes and businesses across Round Rock and Williamson County.
+[Round Rock Apex Water Softener TX](/) provides reverse osmosis system installation for homes and businesses across Round Rock and Williamson County.
 
 </details>
 
@@ -143,4 +143,4 @@ Yes, under-sink installation is our most common RO job.
 
 ## Get Your Free Estimate
 
-Request a free reverse osmosis installation estimate. We will contact you to confirm a time. [Get a Free Estimate](#estimate) or return to Round Rock Elite Water Softener for every service we offer.
+Request a free reverse osmosis installation estimate. We will contact you to confirm a time. [Get a Free Estimate](#estimate) or return to Round Rock Apex Water Softener for every service we offer.

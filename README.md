@@ -1,6 +1,6 @@
 # roundrock-tmp
 
-Rank-and-rent lead-generation site for **Round Rock Elite Water Softener** (roundrockelitewatersoftener.com, target keyword "water softener round rock tx").
+Rank-and-rent lead-generation site for **Round Rock Apex Water Softener** (roundrockelitewatersoftener.com, target keyword "water softener round rock tx").
 Astro 7 static site created from `water-softener-boilerplate` with `Local-SEO-Toolkit/scripts/create-site-project.mjs`.
 
 **Status: scaffold only.** The site builds with starter pages (home, About, Contact, thank-you, 404). The topical map, briefs and

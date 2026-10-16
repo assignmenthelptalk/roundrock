@@ -1,18 +1,18 @@
 ---
 title: "Drinking Water System Installation in Round Rock, TX | Trusted Local Specialists"
-seoTitle: "Drinking Water Systems Round Rock, TX | Round Rock Elite Water Softener"
+seoTitle: "Drinking Water Systems Round Rock, TX | Round Rock Apex Water Softener"
 description: "Drinking water system installation in Round Rock, TX: under-sink filters and reverse osmosis taps for cleaner water at the faucet. Request an estimate."
 metaDraft: false
 slug: "/drinking-water-systems/"
 pageType: "service"
 parentSlug: "/water-treatment-and-testing/"
 crumb: "Drinking Water System Installation"
-openingHtml: "Drinking water system installation in Round Rock, TX puts a purification unit where you actually drink and cook: under the sink, on the counter or on a bottleless cooler. <a href=\"/\">Round Rock Elite Water Softener</a> installs each type for homes and offices and helps you choose between them. Request a free estimate and a technician will match a system to your space and your water."
+openingHtml: "Drinking water system installation in Round Rock, TX puts a purification unit where you actually drink and cook: under the sink, on the counter or on a bottleless cooler. <a href=\"/\">Round Rock Apex Water Softener</a> installs each type for homes and offices and helps you choose between them. Request a free estimate and a technician will match a system to your space and your water."
 formHeading: ""
 formIntro: ""
 leadImage: null
 images: [{"file":"drinking-water-systems-round-rock-tx.webp","alt":"Drinking water systems Round Rock TX under sink purification unit","exists":false},{"file":"card-under-sink-drinking-water-systems-round-rock-tx.webp","alt":"Under Sink Drinking Water Systems Round Rock TX","exists":false},{"file":"card-countertop-purification-units-round-rock-tx.webp","alt":"Countertop Purification Units Round Rock TX","exists":false},{"file":"card-alkaline-water-systems-round-rock-tx.webp","alt":"Alkaline Water Systems Round Rock TX","exists":false}]
-faq: [{"q":"Is an under-sink system better than a countertop unit?","a":"Under-sink systems filter more water, flow faster and stay out of sight. Countertop units install without plumbing."},{"q":"Does an alkaline water system make water healthier?","a":"It raises pH and changes taste. Evidence for broader health claims is limited."},{"q":"How often do drinking water filters need replacing?","a":"Replacement depends on the system and use, commonly every six to twelve months for cartridges. As a typical schedule, replace pre-filter cartridges every 6 to 12 months and reverse osmosis membranes every 2 to 3 years."},{"q":"Can a bottleless cooler work in a small office?","a":"Yes. It needs a water line and power, and we size the unit to your headcount. Round Rock Elite Water Softener TX provides drinking water system installation for homes and businesses across Round Rock and Williamson County."}]
+faq: [{"q":"Is an under-sink system better than a countertop unit?","a":"Under-sink systems filter more water, flow faster and stay out of sight. Countertop units install without plumbing."},{"q":"Does an alkaline water system make water healthier?","a":"It raises pH and changes taste. Evidence for broader health claims is limited."},{"q":"How often do drinking water filters need replacing?","a":"Replacement depends on the system and use, commonly every six to twelve months for cartridges. As a typical schedule, replace pre-filter cartridges every 6 to 12 months and reverse osmosis membranes every 2 to 3 years."},{"q":"Can a bottleless cooler work in a small office?","a":"Yes. It needs a water line and power, and we size the unit to your headcount. Round Rock Apex Water Softener TX provides drinking water system installation for homes and businesses across Round Rock and Williamson County."}]
 markerCount: 0
 ---
 
@@ -106,7 +106,7 @@ Yes. It needs a water line and power, and we size the unit to your headcount.
 
 
 
-[Round Rock Elite Water Softener TX](/) provides drinking water system installation for homes and businesses across Round Rock and Williamson County.
+[Round Rock Apex Water Softener TX](/) provides drinking water system installation for homes and businesses across Round Rock and Williamson County.
 
 </details>
 
@@ -114,4 +114,4 @@ Yes. It needs a water line and power, and we size the unit to your headcount.
 
 ## Get Your Free Estimate
 
-Request a free drinking water system estimate. We will contact you to confirm a time. [Get a Free Estimate](#estimate) or return to Round Rock Elite Water Softener for every service we offer.
+Request a free drinking water system estimate. We will contact you to confirm a time. [Get a Free Estimate](#estimate) or return to Round Rock Apex Water Softener for every service we offer.

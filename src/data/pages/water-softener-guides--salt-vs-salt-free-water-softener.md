@@ -1,6 +1,6 @@
 ---
 title: "Salt-Based vs Salt-Free Water Softener in Round Rock, TX | Trusted Local Specialists"
-seoTitle: "Salt vs Salt-Free Softener Round Rock, TX | Round Rock Elite Water Softener"
+seoTitle: "Salt vs Salt-Free Softener Round Rock, TX | Round Rock Apex Water Softener"
 description: "Salt-based vs salt-free water softener in Round Rock, TX: how each works, what each removes and which fits 14.6 gpg water. Compare both before you buy."
 metaDraft: false
 slug: "/water-softener-guides/salt-vs-salt-free-water-softener/"
@@ -12,7 +12,7 @@ formHeading: ""
 formIntro: ""
 leadImage: {"file":"salt-vs-salt-free-water-softener-round-rock-tx.webp","alt":"Salt vs salt-free water softener round rock tx side by side comparison"}
 images: [{"file":"salt-vs-salt-free-water-softener-round-rock-tx.webp","alt":"Salt vs salt-free water softener round rock tx side by side comparison","exists":true}]
-faq: [{"q":"Can I use potassium instead of salt?","a":"Yes. A salt-based softener can regenerate with potassium chloride. It costs more per bag and adds potassium instead of sodium to the water."},{"q":"Does a salt-free system really work?","a":"It reduces scale, and results depend on the technology and the water. It does not remove hardness minerals."},{"q":"Which uses more water?","a":"A salt-based softener uses water for each regeneration. A salt-free system sends no water to the drain."},{"q":"Which costs more?","a":"Prices vary by size and brand. Salt-free has lower running costs, and salt-based has the stronger result."},{"q":"Is softened water safe to drink?","a":"Yes for most people. Households limiting sodium can choose potassium chloride or an under-sink filter for drinking water. Round Rock Elite Water Softener TX provides salt-free water softener systems for homes and businesses across Round Rock and Williamson County."}]
+faq: [{"q":"Can I use potassium instead of salt?","a":"Yes. A salt-based softener can regenerate with potassium chloride. It costs more per bag and adds potassium instead of sodium to the water."},{"q":"Does a salt-free system really work?","a":"It reduces scale, and results depend on the technology and the water. It does not remove hardness minerals."},{"q":"Which uses more water?","a":"A salt-based softener uses water for each regeneration. A salt-free system sends no water to the drain."},{"q":"Which costs more?","a":"Prices vary by size and brand. Salt-free has lower running costs, and salt-based has the stronger result."},{"q":"Is softened water safe to drink?","a":"Yes for most people. Households limiting sodium can choose potassium chloride or an under-sink filter for drinking water. Round Rock Apex Water Softener TX provides salt-free water softener systems for homes and businesses across Round Rock and Williamson County."}]
 markerCount: 0
 ---
 
@@ -92,7 +92,7 @@ Yes for most people. Households limiting sodium can choose potassium chloride or
 
 
 
-[Round Rock Elite Water Softener TX](/) provides salt-free water softener systems for homes and businesses across Round Rock and Williamson County.
+[Round Rock Apex Water Softener TX](/) provides salt-free water softener systems for homes and businesses across Round Rock and Williamson County.
 
 </details>
 
@@ -100,4 +100,4 @@ Yes for most people. Households limiting sodium can choose potassium chloride or
 
 ## Get Your Free Estimate
 
-Request a free estimate and we will compare both options for your home. We will contact you to confirm a time. [Get a Free Estimate](#estimate) or return to Round Rock Elite Water Softener for every service we offer.
+Request a free estimate and we will compare both options for your home. We will contact you to confirm a time. [Get a Free Estimate](#estimate) or return to Round Rock Apex Water Softener for every service we offer.

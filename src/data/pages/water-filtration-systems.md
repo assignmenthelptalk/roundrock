@@ -1,18 +1,18 @@
 ---
 title: "Water Filtration System Installation in Round Rock, TX | Trusted Local Specialists"
-seoTitle: "Water Filtration Systems Round Rock, TX | Round Rock Elite Water Softener"
+seoTitle: "Water Filtration Systems Round Rock, TX | Round Rock Apex Water Softener"
 description: "Whole house water filtration installation in Round Rock, TX reduces chlorine taste and sediment at every tap. Pairs with a softener. Free estimate."
 metaDraft: false
 slug: "/water-filtration-systems/"
 pageType: "service"
 parentSlug: "/water-treatment-and-testing/"
 crumb: "Water Filtration System Installation"
-openingHtml: "Water filtration system installation in Round Rock, TX puts filters where they protect your home and improve your water: at the main line, under the sink, at the shower and at the refrigerator. <a href=\"/\">Round Rock Elite Water Softener</a> installs and replaces filters of every type. Request a free estimate and a technician will match filters to what a water test finds."
+openingHtml: "Water filtration system installation in Round Rock, TX puts filters where they protect your home and improve your water: at the main line, under the sink, at the shower and at the refrigerator. <a href=\"/\">Round Rock Apex Water Softener</a> installs and replaces filters of every type. Request a free estimate and a technician will match filters to what a water test finds."
 formHeading: ""
 formIntro: ""
 leadImage: {"file":"water-filtration-systems-round-rock-tx.webp","alt":"Water filtration systems Round Rock TX whole house filter installation"}
 images: [{"file":"water-filtration-systems-round-rock-tx.webp","alt":"Water filtration systems Round Rock TX whole house filter installation","exists":true},{"file":"card-whole-house-water-filter-round-rock-tx.webp","alt":"Whole House Water Filter Round Rock TX","exists":false},{"file":"card-under-sink-water-filter-round-rock-tx.webp","alt":"Under Sink Water Filter Round Rock TX","exists":false},{"file":"card-sediment-filter-installation-round-rock-tx.webp","alt":"Sediment Filter Installation Round Rock TX","exists":false},{"file":"card-carbon-block-filter-round-rock-tx.webp","alt":"Carbon Block Filter Round Rock TX","exists":false},{"file":"card-shower-filter-installation-round-rock-tx.webp","alt":"Shower Filter Installation Round Rock TX","exists":false},{"file":"card-refrigerator-filter-replacement-round-rock-tx.webp","alt":"Refrigerator Filter Replacement Round Rock TX","exists":false},{"file":"card-multi-stage-filtration-round-rock-tx.webp","alt":"Multi-Stage Filtration Round Rock TX","exists":false}]
-faq: [{"q":"How often does a water filter need replacing?","a":"Replacement depends on the filter type and your water. Sediment and carbon cartridges commonly need changing every few months to a year. Whole-house pre-filter cartridges are typically replaced every 6 to 12 months."},{"q":"Will a whole house filter lower my water pressure?","a":"A correctly sized filter keeps pressure steady. A clogged or undersized one reduces it, so we size to your flow."},{"q":"Do I need a filter if I have a water softener?","a":"Often yes. A softener removes hardness, and a filter removes sediment and chlorine that can also damage resin."},{"q":"What does a shower filter remove?","a":"It reduces chlorine. It does not remove hardness minerals."},{"q":"What does filter installation cost in Round Rock?","a":"Our estimate is free and itemized. Round Rock Elite Water Softener TX provides water filtration system installation for homes and businesses across Round Rock and Williamson County."}]
+faq: [{"q":"How often does a water filter need replacing?","a":"Replacement depends on the filter type and your water. Sediment and carbon cartridges commonly need changing every few months to a year. Whole-house pre-filter cartridges are typically replaced every 6 to 12 months."},{"q":"Will a whole house filter lower my water pressure?","a":"A correctly sized filter keeps pressure steady. A clogged or undersized one reduces it, so we size to your flow."},{"q":"Do I need a filter if I have a water softener?","a":"Often yes. A softener removes hardness, and a filter removes sediment and chlorine that can also damage resin."},{"q":"What does a shower filter remove?","a":"It reduces chlorine. It does not remove hardness minerals."},{"q":"What does filter installation cost in Round Rock?","a":"Our estimate is free and itemized. Round Rock Apex Water Softener TX provides water filtration system installation for homes and businesses across Round Rock and Williamson County."}]
 markerCount: 0
 ---
 
@@ -157,7 +157,7 @@ Our estimate is free and itemized.
 
 
 
-[Round Rock Elite Water Softener TX](/) provides water filtration system installation for homes and businesses across Round Rock and Williamson County.
+[Round Rock Apex Water Softener TX](/) provides water filtration system installation for homes and businesses across Round Rock and Williamson County.
 
 </details>
 
@@ -165,4 +165,4 @@ Our estimate is free and itemized.
 
 ## Get Your Free Estimate
 
-Request a free water filtration estimate. We will contact you to confirm a time. [Get a Free Estimate](#estimate) or return to Round Rock Elite Water Softener for every service we offer.
+Request a free water filtration estimate. We will contact you to confirm a time. [Get a Free Estimate](#estimate) or return to Round Rock Apex Water Softener for every service we offer.

@@ -1,18 +1,18 @@
 ---
 title: "Water Softener Installation & Service in Teravista, TX | Trusted Local Specialists"
-seoTitle: "Water Softener in Teravista, TX | Round Rock Elite Water Softener"
+seoTitle: "Water Softener in Teravista, TX | Round Rock Apex Water Softener"
 description: "Water softener installation and service in Teravista, Round Rock, TX, where a utility district buys City water. The 2025 average is 14.6 gpg. Free test."
 metaDraft: false
 slug: "/water-softener-teravista-tx/"
 pageType: "geo"
 parentSlug: "/service-areas/"
 crumb: "Water Softener Installation & Service in Teravista, TX"
-openingHtml: "Water softener installation and service in Teravista, TX covers installing, replacing, repairing and testing softeners for homes in this Round Rock community. Teravista is served by TeraVista Williamson County MUD No. 10 and No. 11, municipal utility districts that buy wholesale water and wastewater service from the City of Round Rock, whose 2025 report put average hardness at 249 mg/L, about 14.6 grains per gallon. Round Rock Elite Water Softener serves Teravista from its <a href=\"/\">water softener Round Rock TX</a> base. Request a free estimate to get started."
+openingHtml: "Water softener installation and service in Teravista, TX covers installing, replacing, repairing and testing softeners for homes in this Round Rock community. Teravista is served by TeraVista Williamson County MUD No. 10 and No. 11, municipal utility districts that buy wholesale water and wastewater service from the City of Round Rock, whose 2025 report put average hardness at 249 mg/L, about 14.6 grains per gallon. Round Rock Apex Water Softener serves Teravista from its <a href=\"/\">water softener Round Rock TX</a> base. Request a free estimate to get started."
 formHeading: ""
 formIntro: ""
 leadImage: null
 images: []
-faq: [{"q":"How hard is Teravista water?","a":"Teravista water comes from the City of Round Rock system, whose 2025 report put average hardness at 249 mg/L, about 14.6 grains per gallon, within a table range of 100 to 358 ppm. The report gives no separate Teravista figure, so a free test at your tap gives the number."},{"q":"Who supplies water in Teravista?","a":"TeraVista Williamson County MUD No. 10 and No. 11 are municipal utility districts that buy wholesale water and wastewater service from the City of Round Rock. Which district serves your address, and who bills you, is on your water bill."},{"q":"What size water softener does a Teravista home need?","a":"Size depends on household water use and your test result. At 14.6 grains per gallon, a household of four using 320 gallons a day removes about 4,700 grains daily, and a 48,000-grain unit fits that load. Round Rock Elite Water Softener TX provides water softener installation and service in Teravista, TX and serves homes and businesses across Williamson County."}]
+faq: [{"q":"How hard is Teravista water?","a":"Teravista water comes from the City of Round Rock system, whose 2025 report put average hardness at 249 mg/L, about 14.6 grains per gallon, within a table range of 100 to 358 ppm. The report gives no separate Teravista figure, so a free test at your tap gives the number."},{"q":"Who supplies water in Teravista?","a":"TeraVista Williamson County MUD No. 10 and No. 11 are municipal utility districts that buy wholesale water and wastewater service from the City of Round Rock. Which district serves your address, and who bills you, is on your water bill."},{"q":"What size water softener does a Teravista home need?","a":"Size depends on household water use and your test result. At 14.6 grains per gallon, a household of four using 320 gallons a day removes about 4,700 grains daily, and a 48,000-grain unit fits that load. Round Rock Apex Water Softener TX provides water softener installation and service in Teravista, TX and serves homes and businesses across Williamson County."}]
 markerCount: 0
 ---
 
@@ -69,7 +69,7 @@ Size depends on household water use and your test result. At 14.6 grains per gal
 
 
 
-[Round Rock Elite Water Softener TX](/) provides water softener installation and service in Teravista, TX and serves homes and businesses across Williamson County.
+[Round Rock Apex Water Softener TX](/) provides water softener installation and service in Teravista, TX and serves homes and businesses across Williamson County.
 
 </details>
 
@@ -77,4 +77,4 @@ Size depends on household water use and your test result. At 14.6 grains per gal
 
 ## Get Your Free Estimate
 
-Request a free water softener estimate in Teravista, TX. We will contact you to confirm a time. [Get a Free Estimate](#estimate) or return to Round Rock Elite Water Softener for every service we offer.
+Request a free water softener estimate in Teravista, TX. We will contact you to confirm a time. [Get a Free Estimate](#estimate) or return to Round Rock Apex Water Softener for every service we offer.

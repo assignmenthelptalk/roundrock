@@ -310,7 +310,7 @@ export const siteConfig: SiteConfig = {
   affiliateRO: "https://springwellwater.com/follow/ro/",
 
   // Business identity — edit directly, no CMS
-  businessName: "Round Rock Elite Water Softener",
+  businessName: "Round Rock Apex Water Softener",
   phoneNumber: "(512) 000-0000",
   businessEmail: "BUSINESS_EMAIL",
   address: "",

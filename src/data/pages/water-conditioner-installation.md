@@ -1,18 +1,18 @@
 ---
 title: "Water Conditioner Installation in Round Rock, TX | Trusted Local Specialists"
-seoTitle: "Water Conditioner Round Rock, TX | Round Rock Elite Water Softener"
+seoTitle: "Water Conditioner Round Rock, TX | Round Rock Apex Water Softener"
 description: "Water conditioner installation in Round Rock, TX: a salt-free way to reduce scale on pipes and fixtures. See when it fits and when a softener is better."
 metaDraft: false
 slug: "/water-conditioner-installation/"
 pageType: "service"
 parentSlug: "/water-softener-systems/"
 crumb: "Water Conditioner Installation"
-openingHtml: "Water conditioner installation in Round Rock, TX adds a system that treats hard water so scale builds up more slowly on pipes, heaters and fixtures. <a href=\"/\">Round Rock Elite Water Softener</a> installs salt-free conditioners, potassium chloride softeners and scale inhibitor systems, and recommends the one that fits your goal. Request a free estimate and a technician will review your water and your plumbing."
+openingHtml: "Water conditioner installation in Round Rock, TX adds a system that treats hard water so scale builds up more slowly on pipes, heaters and fixtures. <a href=\"/\">Round Rock Apex Water Softener</a> installs salt-free conditioners, potassium chloride softeners and scale inhibitor systems, and recommends the one that fits your goal. Request a free estimate and a technician will review your water and your plumbing."
 formHeading: ""
 formIntro: ""
 leadImage: {"file":"water-conditioner-installation-round-rock-tx.webp","alt":"Water conditioner installation Round Rock TX on a main water line"}
 images: [{"file":"water-conditioner-installation-round-rock-tx.webp","alt":"Water conditioner installation Round Rock TX on a main water line","exists":true},{"file":"card-salt-free-water-conditioners-round-rock-tx.webp","alt":"Salt-Free Water Conditioners Round Rock TX","exists":false},{"file":"card-potassium-chloride-water-softener-systems-round-rock-tx.webp","alt":"Potassium Chloride Water Softener Systems Round Rock TX","exists":false},{"file":"card-hard-water-treatment-service-round-rock-tx.webp","alt":"Hard Water Treatment Service Round Rock TX","exists":false},{"file":"card-limescale-treatment-service-round-rock-tx.webp","alt":"Limescale Treatment Service Round Rock TX","exists":false},{"file":"card-scale-inhibitor-system-installation-round-rock-tx.webp","alt":"Scale Inhibitor System Installation Round Rock TX","exists":false}]
-faq: [{"q":"What is the difference between a water conditioner and a water softener?","a":"A softener removes calcium and magnesium. A conditioner leaves them in the water but changes how they form scale."},{"q":"Is a potassium chloride softener better than a salt softener?","a":"It softens the same way but adds potassium instead of sodium. It costs more to run, so it fits households avoiding sodium."},{"q":"Will a conditioner remove existing limescale?","a":"Not fully. Existing buildup needs a descaling service, and the conditioner slows new buildup."},{"q":"Do scale inhibitors work for a whole house?","a":"They protect pipes and heaters, but they do not make water feel soft. They suit equipment protection more than comfort."},{"q":"What does water conditioner installation cost in Round Rock?","a":"The estimate is free and itemized. Round Rock Elite Water Softener TX provides water conditioner installation for homes and businesses across Round Rock and Williamson County."}]
+faq: [{"q":"What is the difference between a water conditioner and a water softener?","a":"A softener removes calcium and magnesium. A conditioner leaves them in the water but changes how they form scale."},{"q":"Is a potassium chloride softener better than a salt softener?","a":"It softens the same way but adds potassium instead of sodium. It costs more to run, so it fits households avoiding sodium."},{"q":"Will a conditioner remove existing limescale?","a":"Not fully. Existing buildup needs a descaling service, and the conditioner slows new buildup."},{"q":"Do scale inhibitors work for a whole house?","a":"They protect pipes and heaters, but they do not make water feel soft. They suit equipment protection more than comfort."},{"q":"What does water conditioner installation cost in Round Rock?","a":"The estimate is free and itemized. Round Rock Apex Water Softener TX provides water conditioner installation for homes and businesses across Round Rock and Williamson County."}]
 markerCount: 0
 ---
 
@@ -141,7 +141,7 @@ The estimate is free and itemized.
 
 
 
-[Round Rock Elite Water Softener TX](/) provides water conditioner installation for homes and businesses across Round Rock and Williamson County.
+[Round Rock Apex Water Softener TX](/) provides water conditioner installation for homes and businesses across Round Rock and Williamson County.
 
 </details>
 
@@ -149,4 +149,4 @@ The estimate is free and itemized.
 
 ## Get Your Free Estimate
 
-Request a free water conditioner installation estimate. We will contact you to confirm a time. [Get a Free Estimate](#estimate) or return to Round Rock Elite Water Softener for every service we offer.
+Request a free water conditioner installation estimate. We will contact you to confirm a time. [Get a Free Estimate](#estimate) or return to Round Rock Apex Water Softener for every service we offer.

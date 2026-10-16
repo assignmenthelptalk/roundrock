@@ -1,18 +1,18 @@
 ---
 title: "Water Softener Maintenance in Round Rock, TX | Trusted Local Specialists"
-seoTitle: "Water Softener Maintenance Round Rock, TX | Round Rock Elite Water Softener"
+seoTitle: "Water Softener Maintenance Round Rock, TX | Round Rock Apex Water Softener"
 description: "Water softener maintenance in Round Rock, TX: salt refills, resin and brine tank cleaning and valve checks that keep your softener at full capacity."
 metaDraft: false
 slug: "/water-softener-maintenance/"
 pageType: "service"
 parentSlug: "/water-softener-systems/"
 crumb: "Water Softener Maintenance"
-openingHtml: "Water softener maintenance in Round Rock, TX means refilling salt, cleaning the resin and brine tank and inspecting the valve so your system keeps softening at full capacity. <a href=\"/\">Round Rock Elite Water Softener</a> services all major softener brands and schedules visits around your household. Request a free estimate and we will tell you what your system needs."
+openingHtml: "Water softener maintenance in Round Rock, TX means refilling salt, cleaning the resin and brine tank and inspecting the valve so your system keeps softening at full capacity. <a href=\"/\">Round Rock Apex Water Softener</a> services all major softener brands and schedules visits around your household. Request a free estimate and we will tell you what your system needs."
 formHeading: ""
 formIntro: ""
 leadImage: {"file":"water-softener-maintenance-round-rock-tx.webp","alt":"Water softener maintenance Round Rock TX technician checking brine tank"}
 images: [{"file":"water-softener-maintenance-round-rock-tx.webp","alt":"Water softener maintenance Round Rock TX technician checking brine tank","exists":true},{"file":"card-water-softener-resin-cleaning-service-round-rock-tx.webp","alt":"Water Softener Resin Cleaning Service Round Rock TX","exists":false},{"file":"card-water-softener-salt-refill-service-round-rock-tx.webp","alt":"Water Softener Salt Refill Service Round Rock TX","exists":false},{"file":"card-water-softener-brine-tank-cleaning-round-rock-tx.webp","alt":"Water Softener Brine Tank Cleaning Round Rock TX","exists":false},{"file":"card-annual-maintenance-plans-round-rock-tx.webp","alt":"Annual Maintenance Plans Round Rock TX","exists":false}]
-faq: [{"q":"How much salt does a water softener use?","a":"Salt use depends on hardness and water use. Check the brine tank monthly and refill when the level drops near one-third full."},{"q":"Which type of salt suits my softener?","a":"Block, pellet or crystal salt all work, and your manual names the right one. Potassium chloride suits households that avoid sodium."},{"q":"What is a salt bridge?","a":"A salt bridge is a hard crust that forms above the water in the brine tank, so salt cannot dissolve into brine. We break it up and clean the tank."},{"q":"Why does my water feel hard right after a refill?","a":"Salt alone does not soften water. The unit must complete a regeneration cycle, and hard water after that points to resin, injector or valve trouble."},{"q":"Do you service softeners you did not install?","a":"Many brands can be serviced. Tell us the make and model when you request service and we will confirm whether we can work on it. Round Rock Elite Water Softener TX provides water softener maintenance for homes and businesses across Round Rock and Williamson County."}]
+faq: [{"q":"How much salt does a water softener use?","a":"Salt use depends on hardness and water use. Check the brine tank monthly and refill when the level drops near one-third full."},{"q":"Which type of salt suits my softener?","a":"Block, pellet or crystal salt all work, and your manual names the right one. Potassium chloride suits households that avoid sodium."},{"q":"What is a salt bridge?","a":"A salt bridge is a hard crust that forms above the water in the brine tank, so salt cannot dissolve into brine. We break it up and clean the tank."},{"q":"Why does my water feel hard right after a refill?","a":"Salt alone does not soften water. The unit must complete a regeneration cycle, and hard water after that points to resin, injector or valve trouble."},{"q":"Do you service softeners you did not install?","a":"Many brands can be serviced. Tell us the make and model when you request service and we will confirm whether we can work on it. Round Rock Apex Water Softener TX provides water softener maintenance for homes and businesses across Round Rock and Williamson County."}]
 markerCount: 0
 ---
 
@@ -124,7 +124,7 @@ Many brands can be serviced. Tell us the make and model when you request service
 
 
 
-[Round Rock Elite Water Softener TX](/) provides water softener maintenance for homes and businesses across Round Rock and Williamson County.
+[Round Rock Apex Water Softener TX](/) provides water softener maintenance for homes and businesses across Round Rock and Williamson County.
 
 </details>
 
@@ -132,4 +132,4 @@ Many brands can be serviced. Tell us the make and model when you request service
 
 ## Get Your Free Estimate
 
-Request a free water softener service estimate. We will contact you to confirm a time. [Get a Free Estimate](#estimate) or return to Round Rock Elite Water Softener for every service we offer.
+Request a free water softener service estimate. We will contact you to confirm a time. [Get a Free Estimate](#estimate) or return to Round Rock Apex Water Softener for every service we offer.

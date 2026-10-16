@@ -1,18 +1,18 @@
 ---
 title: "Water Quality Testing in Round Rock, TX | Trusted Local Specialists"
-seoTitle: "Water Quality Testing Round Rock, TX | Round Rock Elite Water Softener"
+seoTitle: "Water Quality Testing Round Rock, TX | Round Rock Apex Water Softener"
 description: "Water quality testing in Round Rock, TX measures hardness, iron, pH and total dissolved solids so the right system is sized first. Request a free test."
 metaDraft: false
 slug: "/water-quality-testing/"
 pageType: "service"
 parentSlug: "/water-treatment-and-testing/"
 crumb: "Water Quality Testing"
-openingHtml: "Water quality testing in Round Rock, TX measures the hardness, minerals, disinfectants and contaminants in your tap water so you know what, if anything, needs treatment. <a href=\"/\">Round Rock Elite Water Softener</a> tests city and well water and explains each result in plain language. Request a free test and we will contact you to confirm a time."
+openingHtml: "Water quality testing in Round Rock, TX measures the hardness, minerals, disinfectants and contaminants in your tap water so you know what, if anything, needs treatment. <a href=\"/\">Round Rock Apex Water Softener</a> tests city and well water and explains each result in plain language. Request a free test and we will contact you to confirm a time."
 formHeading: ""
 formIntro: ""
 leadImage: {"file":"water-quality-testing-round-rock-tx.webp","alt":"Water quality testing Round Rock TX technician testing tap water"}
 images: [{"file":"water-quality-testing-round-rock-tx.webp","alt":"Water quality testing Round Rock TX technician testing tap water","exists":true},{"file":"card-free-hard-water-test-round-rock-tx.webp","alt":"Free Hard Water Test Round Rock TX","exists":false},{"file":"card-tds-testing-round-rock-tx.webp","alt":"TDS Testing Round Rock TX","exists":false},{"file":"card-iron-content-testing-round-rock-tx.webp","alt":"Iron Content Testing Round Rock TX","exists":false},{"file":"card-ph-level-testing-round-rock-tx.webp","alt":"pH Level Testing Round Rock TX","exists":false},{"file":"card-chlorine-testing-round-rock-tx.webp","alt":"Chlorine Testing Round Rock TX","exists":false},{"file":"card-sulfur-testing-round-rock-tx.webp","alt":"Sulfur Testing Round Rock TX","exists":false},{"file":"card-heavy-metals-testing-round-rock-tx.webp","alt":"Heavy Metals Testing Round Rock TX","exists":false}]
-faq: [{"q":"Is the water test really free?","a":"Ask exactly which tests are free and which carry a fee before you book."},{"q":"How long does a water test take?","a":"In-home tests for hardness, TDS, pH, iron and chlorine give results in minutes. Lab tests take longer. Lab results typically take a few business days, depending on the lab and the test."},{"q":"How often does water need testing?","a":"Test city water when you notice a change or move in. Test a private well for bacteria at least once a year, and for other substances as local conditions suggest."},{"q":"Do I need a test before buying a softener?","a":"Yes. The result sizes the softener and shows whether you also need a filter."},{"q":"What test shows if my water is safe to drink?","a":"A certified lab panel for bacteria, nitrate, metals and other regulated substances. The City of Round Rock reports cover the public supply. Round Rock Elite Water Softener TX provides water quality testing for homes and businesses across Round Rock and Williamson County."}]
+faq: [{"q":"Is the water test really free?","a":"Ask exactly which tests are free and which carry a fee before you book."},{"q":"How long does a water test take?","a":"In-home tests for hardness, TDS, pH, iron and chlorine give results in minutes. Lab tests take longer. Lab results typically take a few business days, depending on the lab and the test."},{"q":"How often does water need testing?","a":"Test city water when you notice a change or move in. Test a private well for bacteria at least once a year, and for other substances as local conditions suggest."},{"q":"Do I need a test before buying a softener?","a":"Yes. The result sizes the softener and shows whether you also need a filter."},{"q":"What test shows if my water is safe to drink?","a":"A certified lab panel for bacteria, nitrate, metals and other regulated substances. The City of Round Rock reports cover the public supply. Round Rock Apex Water Softener TX provides water quality testing for homes and businesses across Round Rock and Williamson County."}]
 markerCount: 0
 ---
 
@@ -157,7 +157,7 @@ A certified lab panel for bacteria, nitrate, metals and other regulated substanc
 
 
 
-[Round Rock Elite Water Softener TX](/) provides water quality testing for homes and businesses across Round Rock and Williamson County.
+[Round Rock Apex Water Softener TX](/) provides water quality testing for homes and businesses across Round Rock and Williamson County.
 
 </details>
 
@@ -165,4 +165,4 @@ A certified lab panel for bacteria, nitrate, metals and other regulated substanc
 
 ## Get Your Free Estimate
 
-Request a free water quality test. We will contact you to confirm a time. [Get a Free Estimate](#estimate) or return to Round Rock Elite Water Softener for every service we offer.
+Request a free water quality test. We will contact you to confirm a time. [Get a Free Estimate](#estimate) or return to Round Rock Apex Water Softener for every service we offer.

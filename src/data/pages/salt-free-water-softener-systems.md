@@ -1,18 +1,18 @@
 ---
 title: "Salt-Free Water Softener Systems in Round Rock, TX | Trusted Local Specialists"
-seoTitle: "Salt-Free Water Softeners Round Rock, TX | Round Rock Elite Water Softener"
+seoTitle: "Salt-Free Water Softeners Round Rock, TX | Round Rock Apex Water Softener"
 description: "Salt-free water softener systems in Round Rock, TX reduce scale without salt or a drain line. See how they differ from salt-based units. Free estimate."
 metaDraft: false
 slug: "/salt-free-water-softener-systems/"
 pageType: "service"
 parentSlug: "/water-softener-systems/"
 crumb: "Salt-Free Water Softener Systems"
-openingHtml: "A salt-free water softener system in Round Rock, TX conditions hard water so scale no longer clings to pipes, fixtures and appliances, and it does so without salt, a brine tank or a drain line. <a href=\"/\">Round Rock Elite Water Softener</a> installs salt-free systems for homeowners who want lower maintenance and no added sodium. Request a free estimate and a technician will tell you honestly whether salt-free fits your water."
+openingHtml: "A salt-free water softener system in Round Rock, TX conditions hard water so scale no longer clings to pipes, fixtures and appliances, and it does so without salt, a brine tank or a drain line. <a href=\"/\">Round Rock Apex Water Softener</a> installs salt-free systems for homeowners who want lower maintenance and no added sodium. Request a free estimate and a technician will tell you honestly whether salt-free fits your water."
 formHeading: ""
 formIntro: ""
 leadImage: {"file":"salt-free-water-softener-round-rock-tx.webp","alt":"Salt-free water softener round rock tx conditioner on main water line"}
 images: [{"file":"salt-free-water-softener-round-rock-tx.webp","alt":"Salt-free water softener round rock tx conditioner on main water line","exists":true},{"file":"card-template-assisted-crystallization-tac-systems-round-rock-tx.webp","alt":"Template Assisted Crystallization (TAC) Systems Round Rock TX","exists":false},{"file":"card-electronic-descaler-installation-round-rock-tx.webp","alt":"Electronic Descaler Installation Round Rock TX","exists":false},{"file":"card-magnetic-water-conditioner-installation-round-rock-tx.webp","alt":"Magnetic Water Conditioner Installation Round Rock TX","exists":false}]
-faq: [{"q":"Does a salt-free water softener actually soften water?","a":"No. It conditions water so scale does not stick, and it leaves hardness minerals in place. A salt-based softener removes the minerals."},{"q":"How long does a TAC media cartridge last?","a":"Replacement timing depends on water use and system size. Media is typically rated for about 5 to 8 years. The technician sets the schedule at installation."},{"q":"Is a salt-free system better for the environment?","a":"It uses no salt and sends no brine to the drain. Salt-based systems discharge brine during regeneration, which some communities limit."},{"q":"Can I install a salt-free system myself?","a":"Many units install on the main line with basic plumbing skills, but a correct size and pressure check matter. We install and test the unit for you."},{"q":"What does a salt-free system cost in Round Rock?","a":"Our estimate is free and itemized. Round Rock Elite Water Softener TX provides salt-free water softener systems for homes and businesses across Round Rock and Williamson County."}]
+faq: [{"q":"Does a salt-free water softener actually soften water?","a":"No. It conditions water so scale does not stick, and it leaves hardness minerals in place. A salt-based softener removes the minerals."},{"q":"How long does a TAC media cartridge last?","a":"Replacement timing depends on water use and system size. Media is typically rated for about 5 to 8 years. The technician sets the schedule at installation."},{"q":"Is a salt-free system better for the environment?","a":"It uses no salt and sends no brine to the drain. Salt-based systems discharge brine during regeneration, which some communities limit."},{"q":"Can I install a salt-free system myself?","a":"Many units install on the main line with basic plumbing skills, but a correct size and pressure check matter. We install and test the unit for you."},{"q":"What does a salt-free system cost in Round Rock?","a":"Our estimate is free and itemized. Round Rock Apex Water Softener TX provides salt-free water softener systems for homes and businesses across Round Rock and Williamson County."}]
 markerCount: 0
 ---
 
@@ -122,7 +122,7 @@ Our estimate is free and itemized.
 
 
 
-[Round Rock Elite Water Softener TX](/) provides salt-free water softener systems for homes and businesses across Round Rock and Williamson County.
+[Round Rock Apex Water Softener TX](/) provides salt-free water softener systems for homes and businesses across Round Rock and Williamson County.
 
 </details>
 
@@ -130,4 +130,4 @@ Our estimate is free and itemized.
 
 ## Get Your Free Estimate
 
-Request a free salt-free water softener estimate for your Round Rock home. We will contact you to confirm a time. [Get a Free Estimate](#estimate) or return to Round Rock Elite Water Softener for every service we offer.
+Request a free salt-free water softener estimate for your Round Rock home. We will contact you to confirm a time. [Get a Free Estimate](#estimate) or return to Round Rock Apex Water Softener for every service we offer.

@@ -1,13 +1,13 @@
 ---
 title: "Water Softener Guides for Round Rock Homeowners | Trusted Local Specialists"
-seoTitle: "Water Softener Guides Round Rock, TX | Round Rock Elite Water Softener"
+seoTitle: "Water Softener Guides Round Rock, TX | Round Rock Apex Water Softener"
 description: "Water softener guides for Round Rock homeowners: hard water, sizing, cost, salt vs salt-free, lifespan and replacement signs, written for local water."
 metaDraft: false
 slug: "/water-softener-guides/"
 pageType: "guide-hub"
 parentSlug: "/"
 crumb: "Water Softener Guides for Round Rock Homeowners"
-openingHtml: "These guides answer the questions Round Rock, TX homeowners ask before they buy, replace or repair a water softener. Each one uses local water facts and plain explanations, and each links to the service that fits. For installation, replacement and repair, visit <a href=\"/\">Round Rock Elite Water Softener</a>."
+openingHtml: "These guides answer the questions Round Rock, TX homeowners ask before they buy, replace or repair a water softener. Each one uses local water facts and plain explanations, and each links to the service that fits. For installation, replacement and repair, visit <a href=\"/\">Round Rock Apex Water Softener</a>."
 formHeading: ""
 formIntro: ""
 leadImage: {"file":"water-softener-guides-round-rock-tx.webp","alt":"Water softener guides Round Rock TX homeowner reading about hard water"}
@@ -42,7 +42,7 @@ markerCount: 0
 
 
 
-[Round Rock Elite Water Softener TX](/) provides water softener installation, replacement, repair and water testing for homes and businesses across Round Rock and Williamson County.
+[Round Rock Apex Water Softener TX](/) provides water softener installation, replacement, repair and water testing for homes and businesses across Round Rock and Williamson County.
 
 ## Get Your Free Estimate
 

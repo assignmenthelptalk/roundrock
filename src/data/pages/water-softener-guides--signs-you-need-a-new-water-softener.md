@@ -1,6 +1,6 @@
 ---
 title: "7 Signs You Need to Replace Your Water Softener in Round Rock, TX | Trusted Local Specialists"
-seoTitle: "7 Signs You Need a New Softener, Round Rock TX | Round Rock Elite Water Softener"
+seoTitle: "7 Signs You Need a New Softener, Round Rock TX | Round Rock Apex Water Softener"
 description: "7 signs your water softener needs replacing in Round Rock, TX, from returning hard-water spots to rising salt use. Learn when repair stops paying off."
 metaDraft: false
 slug: "/water-softener-guides/signs-you-need-a-new-water-softener/"
@@ -12,7 +12,7 @@ formHeading: ""
 formIntro: ""
 leadImage: null
 images: [{"file":"signs-you-need-a-new-water-softener-round-rock-tx.webp","alt":"Signs you need a new water softener round rock tx scale on faucet and leaking tank","exists":false},{"file":"card-hard-water-symptoms-return-round-rock-tx.webp","alt":"Hard-Water Symptoms Return Round Rock TX","exists":false},{"file":"card-salt-use-rises-sharply-round-rock-tx.webp","alt":"Salt Use Rises Sharply Round Rock TX","exists":false},{"file":"card-salt-bridges-or-mush-keep-returning-round-rock-tx.webp","alt":"Salt Bridges or Mush Keep Returning Round Rock TX","exists":false},{"file":"card-leaks-from-the-tank-head-or-drain-round-rock-tx.webp","alt":"Leaks From the Tank, Head or Drain Round Rock TX","exists":false},{"file":"card-error-codes-or-no-cycling-round-rock-tx.webp","alt":"Error Codes or No Cycling Round Rock TX","exists":false},{"file":"card-resin-beads-in-faucets-or-sinks-round-rock-tx.webp","alt":"Resin Beads in Faucets or Sinks Round Rock TX","exists":false}]
-faq: [{"q":"How can I tell if my softener is working?","a":"Test the softened water for hardness or watch for spots and scale. Soft water also makes soap lather easily."},{"q":"Is a new softener worth it if mine is 12 years old?","a":"Often yes, if it shows any of the signs above. New units regenerate by demand and use less salt and water."},{"q":"Can I replace just the control head?","a":"Yes, when the tank and resin are sound. It restores timing and cycles for less than a new unit."},{"q":"How long does replacement take?","a":"Most replacements finish in one visit, often in 2 to 4 hours. Round Rock Elite Water Softener TX provides water softener replacement for homes and businesses across Round Rock and Williamson County."}]
+faq: [{"q":"How can I tell if my softener is working?","a":"Test the softened water for hardness or watch for spots and scale. Soft water also makes soap lather easily."},{"q":"Is a new softener worth it if mine is 12 years old?","a":"Often yes, if it shows any of the signs above. New units regenerate by demand and use less salt and water."},{"q":"Can I replace just the control head?","a":"Yes, when the tank and resin are sound. It restores timing and cycles for less than a new unit."},{"q":"How long does replacement take?","a":"Most replacements finish in one visit, often in 2 to 4 hours. Round Rock Apex Water Softener TX provides water softener replacement for homes and businesses across Round Rock and Williamson County."}]
 markerCount: 0
 ---
 
@@ -139,7 +139,7 @@ Most replacements finish in one visit, often in 2 to 4 hours.
 
 
 
-[Round Rock Elite Water Softener TX](/) provides water softener replacement for homes and businesses across Round Rock and Williamson County.
+[Round Rock Apex Water Softener TX](/) provides water softener replacement for homes and businesses across Round Rock and Williamson County.
 
 </details>
 
@@ -147,4 +147,4 @@ Most replacements finish in one visit, often in 2 to 4 hours.
 
 ## Get Your Free Estimate
 
-Request a free softener inspection and replacement estimate for your Round Rock home. We will contact you to confirm a time. [Get a Free Estimate](#estimate) or return to Round Rock Elite Water Softener for every service we offer.
+Request a free softener inspection and replacement estimate for your Round Rock home. We will contact you to confirm a time. [Get a Free Estimate](#estimate) or return to Round Rock Apex Water Softener for every service we offer.

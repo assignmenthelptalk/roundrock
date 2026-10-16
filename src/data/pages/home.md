@@ -1,13 +1,13 @@
 ---
-title: "Round Rock Elite Water Softener - Expert Water Softener Services in Round Rock, TX"
-seoTitle: "Water Softener Round Rock, TX | Round Rock Elite Water Softener"
-description: "Round Rock Elite Water Softener installs, repairs and replaces water softeners in Round Rock, TX. The City's 2025 average is 14.6 gpg. Get a free estimate."
+title: "Round Rock Apex Water Softener - Expert Water Softener Services in Round Rock, TX"
+seoTitle: "Water Softener Round Rock, TX | Round Rock Apex Water Softener"
+description: "Round Rock Apex Water Softener installs, repairs and replaces water softeners in Round Rock, TX. The City's 2025 average is 14.6 gpg. Get a free estimate."
 metaDraft: false
 slug: "/"
 pageType: "home"
 parentSlug: null
-crumb: "Round Rock Elite Water Softener - Expert Water Softener Services"
-openingHtml: "Round Rock's drinking water is surface water from Lake Georgetown and Lake Travis plus Edwards Aquifer groundwater, and the City of Round Rock's 2025 water quality report put average hardness at 249 mg/L, about 14.6 grains per gallon. Round Rock Elite Water Softener specializes in water softener installation, repair and maintenance for homes and businesses in Round Rock and Williamson County. Free in-home water test available."
+crumb: "Round Rock Apex Water Softener - Expert Water Softener Services"
+openingHtml: "Round Rock's drinking water is surface water from Lake Georgetown and Lake Travis plus Edwards Aquifer groundwater, and the City of Round Rock's 2025 water quality report put average hardness at 249 mg/L, about 14.6 grains per gallon. Round Rock Apex Water Softener specializes in water softener installation, repair and maintenance for homes and businesses in Round Rock and Williamson County. Free in-home water test available."
 formHeading: "Get Your Free Water Softener Estimate in Round Rock, TX"
 formIntro: "A free estimate covers your home's water use, the right system size and a clear installed price. Fill in the form and we will contact you to confirm a time."
 leadImage: {"file":"hero-water-softener-round-rock-tx.webp","alt":"Technician installing a water softener Round Rock TX home"}
@@ -50,7 +50,7 @@ Homeowners choose a water softener company on five things: who does the work, ho
 
 ## What Water Softener Services Are Available in Round Rock, TX?
 
-Round Rock Elite Water Softener covers six core services, from first installation to long-term maintenance, and adds specialty systems for larger homes, businesses and wells.
+Round Rock Apex Water Softener covers six core services, from first installation to long-term maintenance, and adds specialty systems for larger homes, businesses and wells.
 
 <div class="svc-grid">
 

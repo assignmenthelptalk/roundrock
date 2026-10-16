@@ -1,6 +1,6 @@
 ---
 title: "Water Softener Size Guide in Round Rock, TX | Trusted Local Specialists"
-seoTitle: "Water Softener Size Guide Round Rock, TX | Round Rock Elite Water Softener"
+seoTitle: "Water Softener Size Guide Round Rock, TX | Round Rock Apex Water Softener"
 description: "Size a water softener for your Round Rock, TX home. Use daily water use and hardness to find the grain capacity, with a worked example for 14.6 gpg water."
 metaDraft: false
 slug: "/water-softener-guides/water-softener-size-guide/"
@@ -12,7 +12,7 @@ formHeading: ""
 formIntro: ""
 leadImage: {"file":"water-softener-size-guide-round-rock-tx.webp","alt":"Water softener size guide Round Rock TX grain capacity chart"}
 images: [{"file":"water-softener-size-guide-round-rock-tx.webp","alt":"Water softener size guide Round Rock TX grain capacity chart","exists":true}]
-faq: [{"q":"Is bigger always better for a water softener?","a":"No. An oversized unit costs more and regenerates less often, which can leave resin idle. Aim for a regeneration every three to seven days."},{"q":"How often does a softener regenerate?","a":"Most households do best with a regeneration every three to seven days. Newer control heads regenerate by actual use."},{"q":"Does the number of bathrooms matter?","a":"Bathrooms matter through people and usage. Count people and heavy water use rather than rooms."},{"q":"What if my family grows or I add a pool?","a":"Re-run the formula. A larger load calls for the next size up or a dual tank system. Round Rock Elite Water Softener TX provides water softener installation for homes and businesses across Round Rock and Williamson County."}]
+faq: [{"q":"Is bigger always better for a water softener?","a":"No. An oversized unit costs more and regenerates less often, which can leave resin idle. Aim for a regeneration every three to seven days."},{"q":"How often does a softener regenerate?","a":"Most households do best with a regeneration every three to seven days. Newer control heads regenerate by actual use."},{"q":"Does the number of bathrooms matter?","a":"Bathrooms matter through people and usage. Count people and heavy water use rather than rooms."},{"q":"What if my family grows or I add a pool?","a":"Re-run the formula. A larger load calls for the next size up or a dual tank system. Round Rock Apex Water Softener TX provides water softener installation for homes and businesses across Round Rock and Williamson County."}]
 markerCount: 0
 ---
 
@@ -101,7 +101,7 @@ Re-run the formula. A larger load calls for the next size up or a dual tank syst
 
 
 
-[Round Rock Elite Water Softener TX](/) provides water softener installation for homes and businesses across Round Rock and Williamson County.
+[Round Rock Apex Water Softener TX](/) provides water softener installation for homes and businesses across Round Rock and Williamson County.
 
 </details>
 
@@ -109,4 +109,4 @@ Re-run the formula. A larger load calls for the next size up or a dual tank syst
 
 ## Get Your Free Estimate
 
-Request a free water test and sizing for your Round Rock home. We will contact you to confirm a time. [Get a Free Estimate](#estimate) or return to Round Rock Elite Water Softener for every service we offer.
+Request a free water test and sizing for your Round Rock home. We will contact you to confirm a time. [Get a Free Estimate](#estimate) or return to Round Rock Apex Water Softener for every service we offer.
