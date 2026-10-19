@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://watersoftenerroundrock.com/sitemap-index.xml
