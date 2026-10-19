@@ -315,6 +315,7 @@ export const siteConfig: SiteConfig = {
   businessEmail: "BUSINESS_EMAIL",
   address: "",
   googleBusinessUrl: "",
+  googleSiteVerification: "AaIXPHJ3xP1vI0wpcsTFfXcpIYzGC9A7fQRfhUrg_5c",
   socialLinks: { facebook: "", instagram: "", pinterest: "", x: "", youtube: "" },
   siteUrl: `https://${domain}`,
 
