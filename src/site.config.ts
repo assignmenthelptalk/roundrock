@@ -298,8 +298,8 @@ export const siteConfig: SiteConfig = {
   waterSource: "Surface water primarily from Lake Georgetown, groundwater from the Edwards Aquifer, and surface water from Lake Travis treated by the Brushy Creek Regional Utility Authority",
   waterAuthority: "City of Round Rock Utilities",
   // SEO
-  primaryKeyword: "water softener round rock tx",
-  searchVol: 0,
+  primaryKeyword: "water softener round rock texas",
+  searchVol: 140,
   metaDescription: "Water softener installation, repair and replacement in Round Rock, TX. The City's 2025 report puts average hardness at 249 mg/L, about 14.6 gpg. Free estimate.",
   // Local data
   population: "119,468",
