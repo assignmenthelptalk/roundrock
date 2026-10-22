@@ -18,13 +18,14 @@ markerCount: 0
 
 ## Round Rock Neighborhoods
 
-We serve Teravista, Forest Creek, Paloma Lake, Behrens Ranch and Sonoma, along with every other Round Rock neighborhood. Each neighborhood page is published once its water provider is confirmed.
+We serve Teravista, Forest Creek, Paloma Lake, Behrens Ranch and Sonoma, along with every other Round Rock neighborhood. These neighborhoods share the city's water system, so they are covered on this page instead of on separate pages.
 
-- [Teravista](/water-softener-teravista-tx/)
+- **Teravista:** Served by TeraVista Williamson County MUD No. 10 and No. 11, which buy wholesale water and wastewater service from the City of Round Rock (Community Impact, January 2024). The water is the City's, whose 2025 report puts average hardness at 249 mg/L, about 14.6 gpg; it gives no separate Teravista figure.
 - Forest Creek
-- [Paloma Lake](/water-softener-paloma-lake-tx/)
+- **Paloma Lake:** Served by Paloma Lake MUD No. 1 and No. 2, which buy wholesale water and wastewater service from the City of Round Rock (Community Impact, January 2024). The water is the City's, whose 2025 report puts average hardness at 249 mg/L, about 14.6 gpg; it gives no separate Paloma Lake figure.
 - Behrens Ranch
 - Sonoma
+
 
 Not sure whether your home is in our area? Call or request an estimate, and we will confirm.
 

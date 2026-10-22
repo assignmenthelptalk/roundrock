@@ -190,6 +190,26 @@
       "source": "/quote/",
       "destination": "/contact/",
       "permanent": true
+    },
+    {
+      "source": "/water-softener-teravista-tx",
+      "destination": "/service-areas/",
+      "permanent": true
+    },
+    {
+      "source": "/water-softener-teravista-tx/",
+      "destination": "/service-areas/",
+      "permanent": true
+    },
+    {
+      "source": "/water-softener-paloma-lake-tx",
+      "destination": "/service-areas/",
+      "permanent": true
+    },
+    {
+      "source": "/water-softener-paloma-lake-tx/",
+      "destination": "/service-areas/",
+      "permanent": true
     }
   ]
 }
